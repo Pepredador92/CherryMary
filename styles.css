@@ -38,6 +38,7 @@ h4 {
 }
 
 ul {
+  font-size: small;
   list-style-type: none;
   padding: 0;
 }
@@ -55,7 +56,7 @@ button {
   background-color: #ff69b4;
   color: white;
   border: none;
-  padding: 10px 15px;
+  padding: 6px 5px;
   cursor: pointer;
   border-radius: 5px;
   font-weight: bold;
@@ -82,7 +83,7 @@ header {
 nav ul {
   list-style: none;
   display: flex;
-  gap: 15px;
+  gap: 5px;
 }
 
 nav a {
@@ -114,9 +115,9 @@ nav a {
 .carrusel-container {
   position: relative;
   overflow: hidden;
-  height: 1100px;
+  height: 500px;
   width: 100%;
-  max-width: 850px;
+  max-width: 400px;
   margin: 20px auto;
 }
 
@@ -131,9 +132,9 @@ nav a {
 /* Tarjetas de producto dentro del carrusel */
 .carrusel .producto {
   min-width: 100%; /* 4 productos visibles */
-  height: 500px;
+  height: 300px;
   box-sizing: border-box;
-  padding: 10px;
+  padding: 5px;
   
 }
 
@@ -141,7 +142,7 @@ nav a {
 /* Imágenes de los productos */
 .producto-imagen {
   width: 100%;  /* La imagen ocupa todo el ancho de la tarjeta */
-  height: 900px; /* Altura fija para mantener el tamaño uniforme */
+  height: 400px; /* Altura fija para mantener el tamaño uniforme */
   object-fit: cover; /* Asegura que la imagen se recorte sin distorsión */
   border-radius: 10px; /* Bordes redondeados para un estilo más agradable */
   margin-bottom: 10px;
@@ -179,8 +180,8 @@ nav a {
 .productos-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 20px; /* Espacio entre productos */
-  max-width: 1000px; /* Limitar el ancho del contenedor*/
+  gap: 10px; /* Espacio entre productos */
+  max-width: 400px; /* Limitar el ancho del contenedor*/
   margin: 0 auto; /* Centrar horizontalmente */
   padding: 10px;
 }
