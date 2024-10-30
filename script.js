@@ -35,7 +35,7 @@ let currentIndex = 0;
 // Función para mover el carrusel
 function moverCarrusel(direccion) {
   const totalProductos = novedades.length;
-  const productosVisibles = 4;
+  const productosVisibles = 1;
   const maxIndex = Math.ceil(totalProductos / productosVisibles) - 1;
 
   if (direccion === 'next' && currentIndex < maxIndex) {
