@@ -8,7 +8,7 @@
 
 body {
   font-family: 'Arial', sans-serif;
-  background-color: #fff5f8;
+  background-color: #f3f3f3;
   color: #333;
   line-height: 1.6;
 }
@@ -23,7 +23,7 @@ h1 {
 
 /* Estilo personalizado solo para el h2 */
 h2 {
-  color: #ff4081; /* Color más vibrante */
+  color: #e75c4d; /* Color más vibrante */
   font-size: 2rem; /* Tamaño del h2 */
   text-align: center;
   margin: 10px 0;
@@ -48,12 +48,12 @@ li {
 }
 
 p {
-  font-weight: bold;
+  font-weight: normal;
   text-align: center;
 }
 
 button {
-  background-color: #ff69b4;
+  background-color: #e75c4d;
   color: white;
   border: none;
   padding: 6px 5px;
@@ -63,7 +63,7 @@ button {
 }
 
 button:hover {
-  background-color: #ff4081;
+  background-color: #e75c4d;
 }
 /* ---------------------ESTILO HEADER---------------------- */
 /* Header */
@@ -73,12 +73,20 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #ff69b4;
+  background-color: #e75c4d;
   color: white;
   position: sticky;
   top: 0;
   z-index: 1000;
 }
+
+.logo-imagen {
+  width: 75px; 
+  height: auto;
+  margin-right: 10px; /* Espacio entre la imagen y el texto */
+  vertical-align: middle; /* Alinea la imagen con el texto */
+}
+
 
 nav ul {
   list-style: none;
@@ -94,9 +102,13 @@ nav a {
 /* ---------------------ESTILO HERO SECTION---------------------- */
 /* Hero Section */
 .hero {
-  background-color: #ffe4e1;
-  padding: 50px;
+  background-image: url('img/descubre-header.jpg'); /* Cambia 'tu-imagen.jpg' por el nombre de tu archivo */
+  background-size: cover; /* Asegura que la imagen cubra toda la sección */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat;
+  padding: 200px;
   text-align: center;
+  color: #fff
 }
 
 .hero .cta {
@@ -353,7 +365,7 @@ nav a {
 footer {
   text-align: center;
   padding: 10px;
-  background-color: #ff69b4;
+  background-color: #e75c4d;
   color: white;
   position: relative;
   bottom: 0;
