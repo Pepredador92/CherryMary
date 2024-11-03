@@ -54,33 +54,33 @@ document.querySelector('.next-btn').addEventListener('click', () => moverCarruse
 //-----------------------------LISTA DE PRODUCTOS------------------------------------
 // Productos disponibles
 const productos = [
-  { id: 1, nombre: 'Consolador transparente', precio: 720, imagen: 'img/huev-de-gran-tamano-con-pene.jpg' },
-  { id: 10, nombre: 'Dildo de doble penetración', precio: 157, imagen: 'img/dildo-doble-penetracion.jpg' },
-  { id: 26, nombre: 'Consolador tentacle', precio: 675, imagen: 'img/consolador-tentacle.jpg' },
-  { id: 3, nombre: 'Anillo de bloqueo de pene', precio: 220, imagen: 'img/anillo-pene-bloqueo-crisal.jpg' },
-  { id: 4, nombre: 'Anillo con perlas para pene', precio: 96, imagen: 'img/anillos-peneanos.jpg' },
-  { id: 5, nombre: 'Anillo vibrador', precio: 145, imagen: 'img/anillo-vibrador.jpg' },
-  { id: 24, nombre: 'Dildo remoto', precio: 560, imagen: 'img/dildo-control-remoto.jpg' },
-  { id: 25, nombre: 'Dildo sexy remoto', precio: 455, imagen: 'img/dildo-sexy-por-app.jpg' },
-  { id: 18, nombre: 'Vibrador con control', precio: 520, imagen: 'img/vibrador-con-control-remoto.jpg' },
-  { id: 21, nombre: 'Vibrador Succionador', precio: 620, imagen: 'img/mini-vibrador-con-succion-clitoris.jpg' },
-  { id: 22, nombre: 'Masageador de silicón', precio: 517, imagen: 'img/masageador-silicona-30-vel.jpg' },
-  { id: 27, nombre: 'Consolador realista', precio: 726, imagen: 'img/669-pulgadas-con-control-remoto-por-cable.jpg' },
-  { id: 23, nombre: 'Huevo inalambrico', precio: 615, imagen: 'img/huevos-saltarines-inalmbricos.jpg' },
-  { id: 20, nombre: 'Bala anal', precio: 427, imagen: 'img/palillo-de-bala-g-punto-anal-dildo.jpg' },
-  { id: 6, nombre: 'Arnés body gótico', precio: 347, imagen: 'img/arnes-del-body-gotico.jpg' },
-  { id: 17, nombre: 'Set de restricción de muñecas', precio: 270, imagen: 'img/set-de-restriccion-de-munecas.jpg' },
-  { id: 11, nombre: 'Esposas y tobilleras', precio: 584, imagen: 'img/esposas-y-tobilleras.jpg' },
-  { id: 9, nombre: 'Conjunto de restricción 7pzas', precio: 528, imagen: 'img/conjunto-restriccion-7-piezas.jpg' },
-  { id: 13, nombre: 'Gancho anal', precio: 536, imagen: 'img/gancho-anal-acero.jpg' },
-  { id: 19, nombre: 'Plug anal con joya', precio: 248, imagen: 'img/tampon-anal-metal.jpg' },
-  { id: 8, nombre: 'Conjunto con gancho anal', precio: 797, imagen: 'img/conjunto-gancho-anal-bdsm.jpg' },
-  { id: 7, nombre: 'Collar con clip', precio: 250, imagen: 'img/collar-con-clip-bdsm.jpg' },
-  { id: 14, nombre: 'Sujetador BDSM', precio: 217, imagen: 'img/juego-sujetador-bdsm-ojos.jpg' },
-  { id: 15, nombre: 'Sujetator BDSM por niveles', precio: 345, imagen: 'img/juguete-sexual-para-mujer-bdsm.jpg' },
-  { id: 16, nombre: 'Látigo para juegos', precio: 197, imagen: 'img/latigo-para-juegos-adulto.jpg' },
-  { id: 12, nombre: 'Expansor anal ajustable n1', precio: 720, imagen: 'img/expansor-anal-ajustable.jpg' },
-  { id: 2, nombre: 'Expansor anal ajustable n2', precio: 792, imagen: 'img/ana-expansible-acero-ajustable.jpg' },
+  { id: 1, nombre: 'Consolador transparente', precio: 720, imagen: 'img/huev-de-gran-tamano-con-pene.jpg', categoria: 'consoladores' },
+  { id: 10, nombre: 'Dildo de doble penetración', precio: 157, imagen: 'img/dildo-doble-penetracion.jpg', categoria: 'consoladores' },
+  { id: 26, nombre: 'Consolador tentacle', precio: 675, imagen: 'img/consolador-tentacle.jpg', categoria: 'consoladores' },
+  { id: 3, nombre: 'Anillo de bloqueo de pene', precio: 220, imagen: 'img/anillo-pene-bloqueo-crisal.jpg', categoria: 'pene' },
+  { id: 4, nombre: 'Anillo con perlas para pene', precio: 96, imagen: 'img/anillos-peneanos.jpg', categoria: 'pene' },
+  { id: 5, nombre: 'Anillo vibrador', precio: 145, imagen: 'img/anillo-vibrador.jpg', categoria: 'pene' },
+  { id: 24, nombre: 'Dildo remoto', precio: 560, imagen: 'img/dildo-control-remoto.jpg', categoria: 'vibradores' },
+  { id: 25, nombre: 'Dildo sexy remoto', precio: 455, imagen: 'img/dildo-sexy-por-app.jpg', categoria: 'vibradores' },
+  { id: 18, nombre: 'Vibrador con control', precio: 520, imagen: 'img/vibrador-con-control-remoto.jpg', categoria: 'vibradores' },
+  { id: 21, nombre: 'Vibrador Succionador', precio: 620, imagen: 'img/mini-vibrador-con-succion-clitoris.jpg', categoria: 'vibradores' },
+  { id: 22, nombre: 'Masageador de silicón', precio: 517, imagen: 'img/masageador-silicona-30-vel.jpg', categoria: 'vibradores' },
+  { id: 27, nombre: 'Consolador realista', precio: 726, imagen: 'img/669-pulgadas-con-control-remoto-por-cable.jpg', categoria: 'vibradores' },
+  { id: 23, nombre: 'Huevo inalambrico', precio: 615, imagen: 'img/huevos-saltarines-inalmbricos.jpg', categoria: 'vibradores' },
+  { id: 20, nombre: 'Bala anal', precio: 427, imagen: 'img/palillo-de-bala-g-punto-anal-dildo.jpg', categoria: 'vibradores' },
+  { id: 6, nombre: 'Arnés body gótico', precio: 347, imagen: 'img/arnes-del-body-gotico.jpg', categoria: 'lenceria' },
+  { id: 17, nombre: 'Set de restricción de muñecas', precio: 270, imagen: 'img/set-de-restriccion-de-munecas.jpg', categoria: 'restriccion' },
+  { id: 11, nombre: 'Esposas y tobilleras', precio: 584, imagen: 'img/esposas-y-tobilleras.jpg', categoria: 'restriccion' },
+  { id: 9, nombre: 'Conjunto de restricción 7pzas', precio: 528, imagen: 'img/conjunto-restriccion-7-piezas.jpg', categoria: 'restriccion' },
+  { id: 13, nombre: 'Gancho anal', precio: 536, imagen: 'img/gancho-anal-acero.jpg', categoria: 'anales' },
+  { id: 19, nombre: 'Plug anal con joya', precio: 248, imagen: 'img/tampon-anal-metal.jpg', categoria: 'anales' },
+  { id: 8, nombre: 'Conjunto con gancho anal', precio: 797, imagen: 'img/conjunto-gancho-anal-bdsm.jpg', categoria: 'anales' },
+  { id: 7, nombre: 'Collar con clip', precio: 250, imagen: 'img/collar-con-clip-bdsm.jpg', categoria: 'lenceria' },
+  { id: 14, nombre: 'Sujetador BDSM', precio: 217, imagen: 'img/juego-sujetador-bdsm-ojos.jpg', categoria: 'restriccion' },
+  { id: 15, nombre: 'Sujetator BDSM por niveles', precio: 345, imagen: 'img/juguete-sexual-para-mujer-bdsm.jpg', categoria: 'restriccion' },
+  { id: 16, nombre: 'Látigo para juegos', precio: 197, imagen: 'img/latigo-para-juegos-adulto.jpg', categoria: 'restriccion' },
+  { id: 12, nombre: 'Expansor anal ajustable n1', precio: 720, imagen: 'img/expansor-anal-ajustable.jpg', categoria: 'anales' },
+  { id: 2, nombre: 'Expansor anal ajustable n2', precio: 792, imagen: 'img/ana-expansible-acero-ajustable.jpg', categoria: 'anales' },
 ];
 
 const productosList = document.getElementById('productos-list');
@@ -103,6 +103,48 @@ const carritoElement = document.getElementById('carrito');
 const carritoItems = document.getElementById('carrito-items');
 const totalElement = document.getElementById('total');
 const carritoBtn = document.getElementById('carrito-btn');
+
+//-----------------------------productos ------------------------------------
+
+// Obtener el submenú y la opción del menú de productos
+const submenu = document.querySelector('.submenu');
+const productosMenu = document.querySelector('nav ul li a[href="#productos"]');
+
+// Alternar la visibilidad del submenú al hacer clic en "Productos"
+productosMenu.addEventListener('click', (event) => {
+  event.preventDefault(); // Evita el comportamiento por defecto del enlace
+  submenu.style.display = submenu.style.display === 'block' ? 'none' : 'block';
+});
+
+function filtrarProductos(categoria) {
+  // Filtra los productos según la categoría seleccionada o muestra todos
+  let productosFiltrados;
+  if (categoria === 'todos') {
+    productosFiltrados = productos; // Muestra todos los productos
+  } else {
+    productosFiltrados = productos.filter(producto => producto.categoria === categoria);
+  }
+
+  // Limpia el contenedor de productos
+  productosList.innerHTML = '';
+
+  // Renderiza los productos filtrados
+  productosFiltrados.forEach(producto => {
+    const div = document.createElement('div');
+    div.classList.add('producto');
+    div.innerHTML = `
+      <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" />
+      <h3>${producto.nombre}</h3>
+      <p>${producto.precio} MXN</p>
+      <button onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
+    `;
+    productosList.appendChild(div);
+  });
+
+  // Ocultar el submenú después de seleccionar una opción
+  submenu.style.display = 'none';
+}
+
 
 //-----------------------------CARRITO ------------------------------------
 // Evento para mostrar/ocultar el carrito
