@@ -1,12 +1,12 @@
 const novedades = [
-  { id: 1001, nombre: 'Masageador de silicon', precio: 328, precioOriginal: 517, imagen: 'img/masageador-silicona-30-vel.jpg' },
-  { id: 1002, nombre: 'Huevo inambrico', precio: 492, precioOriginal: 738, imagen: 'img/huevos-saltarines-inalmbricos.jpg' },
-  { id: 1003, nombre: 'Dildo remoto', precio: 448,precioOriginal: 672, imagen: 'img/dildo-control-remoto.jpg' },
-  { id: 1004, nombre: 'Plug Anal acero', precio: 160,precioOriginal: 248, imagen: 'img/tampon-anal-metal.jpg' },
-  { id: 1005, nombre: 'Bala anal', precio: 250, precioOriginal: 427, imagen: 'img/palillo-de-bala-g-punto-anal-dildo.jpg' },
-  { id: 1006, nombre: 'Dildo tentacle', precio: 540, precioOriginal: 810, imagen: 'img/consolador-tentacle.jpg' },
-  { id: 1007, nombre: 'Consolador realista', precio: 515, precioOriginal: 726, imagen: 'img/669-pulgadas-con-control-remoto-por-cable.jpg' },
-  { id: 1008, nombre: 'Vibrador succionador', precio: 499, precioOriginal: 750, imagen: 'img/mini-vibrador-con-succion-clitoris.jpg' }
+  { id: 1001, nombre: 'Masageador de silicon (1)', precio: 328, precioOriginal: 517, imagen: 'img/masageador-silicona-30-vel.jpg' },
+  { id: 1002, nombre: 'Huevo inambrico (1)', precio: 492, precioOriginal: 615, imagen: 'img/huevos-saltarines-inalmbricos.jpg' },
+  { id: 1003, nombre: 'Dildo remoto (1)', precio: 448,precioOriginal: 560, imagen: 'img/dildo-control-remoto.jpg' },
+  { id: 1004, nombre: 'Plug Anal con joya (1)', precio: 160,precioOriginal: 248, imagen: 'img/tampon-anal-metal.jpg' },
+  { id: 1005, nombre: 'Bala anal (1)', precio: 250, precioOriginal: 427, imagen: 'img/palillo-de-bala-g-punto-anal-dildo.jpg' },
+  { id: 1006, nombre: 'Consolador tentacle (1)', precio: 540, precioOriginal: 675, imagen: 'img/consolador-tentacle.jpg' },
+  { id: 1007, nombre: 'Consolador realista (1)', precio: 545, precioOriginal: 726, imagen: 'img/669-pulgadas-con-control-remoto-por-cable.jpg' },
+  { id: 1008, nombre: 'Vibrador succionador (1)', precio: 499, precioOriginal: 620, imagen: 'img/mini-vibrador-con-succion-clitoris.jpg' }
 ];
 
 const carrusel = document.getElementById('carrusel');
@@ -54,16 +54,33 @@ document.querySelector('.next-btn').addEventListener('click', () => moverCarruse
 //-----------------------------LISTA DE PRODUCTOS------------------------------------
 // Productos disponibles
 const productos = [
-  { id: 1, nombre: 'Auriculares ProSound 360', precio: 1299, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 2, nombre: 'Teclado Mecánico', precio: 1799, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 3, nombre: 'Smartwatch FitXplorer', precio: 2499, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 4, nombre: 'Tablet X-Touch PowerNova', precio: 15990, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 5, nombre: 'Bocina Bluetooth', precio: 499, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 6, nombre: 'Smart TV UltraVision', precio: 8980, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 7, nombre: 'Cámara Deportiva', precio: 3490, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 8, nombre: 'Mouse Inalámbrico', precio: 299, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 9, nombre: 'Cargador Rápido', precio: 157, imagen: 'img/vibrador-conejito.jpg' },
-  { id: 10, nombre: 'Laptop PowerNova', precio: 15570, imagen: 'img/vibrador-conejito.jpg' }
+  { id: 1, nombre: 'Consolador transparente', precio: 720, imagen: 'img/huev-de-gran-tamano-con-pene.jpg' },
+  { id: 10, nombre: 'Dildo de doble penetración', precio: 157, imagen: 'img/dildo-doble-penetracion.jpg' },
+  { id: 26, nombre: 'Consolador tentacle', precio: 675, imagen: 'img/consolador-tentacle.jpg' },
+  { id: 3, nombre: 'Anillo de bloqueo de pene', precio: 220, imagen: 'img/anillo-pene-bloqueo-crisal.jpg' },
+  { id: 4, nombre: 'Anillo con perlas para pene', precio: 96, imagen: 'img/anillos-peneanos.jpg' },
+  { id: 5, nombre: 'Anillo vibrador', precio: 145, imagen: 'img/anillo-vibrador.jpg' },
+  { id: 24, nombre: 'Dildo remoto', precio: 560, imagen: 'img/dildo-control-remoto.jpg' },
+  { id: 25, nombre: 'Dildo sexy remoto', precio: 455, imagen: 'img/dildo-sexy-por-app.jpg' },
+  { id: 18, nombre: 'Vibrador con control', precio: 520, imagen: 'img/vibrador-con-control-remoto.jpg' },
+  { id: 21, nombre: 'Vibrador Succionador', precio: 620, imagen: 'img/mini-vibrador-con-succion-clitoris.jpg' },
+  { id: 22, nombre: 'Masageador de silicón', precio: 517, imagen: 'img/masageador-silicona-30-vel.jpg' },
+  { id: 27, nombre: 'Consolador realista', precio: 726, imagen: 'img/669-pulgadas-con-control-remoto-por-cable.jpg' },
+  { id: 23, nombre: 'Huevo inalambrico', precio: 615, imagen: 'img/huevos-saltarines-inalmbricos.jpg' },
+  { id: 20, nombre: 'Bala anal', precio: 427, imagen: 'img/palillo-de-bala-g-punto-anal-dildo.jpg' },
+  { id: 6, nombre: 'Arnés body gótico', precio: 347, imagen: 'img/arnes-del-body-gotico.jpg' },
+  { id: 17, nombre: 'Set de restricción de muñecas', precio: 270, imagen: 'img/set-de-restriccion-de-munecas.jpg' },
+  { id: 11, nombre: 'Esposas y tobilleras', precio: 584, imagen: 'img/esposas-y-tobilleras.jpg' },
+  { id: 9, nombre: 'Conjunto de restricción 7pzas', precio: 528, imagen: 'img/conjunto-restriccion-7-piezas.jpg' },
+  { id: 13, nombre: 'Gancho anal', precio: 536, imagen: 'img/gancho-anal-acero.jpg' },
+  { id: 19, nombre: 'Plug anal con joya', precio: 248, imagen: 'img/tampon-anal-metal.jpg' },
+  { id: 8, nombre: 'Conjunto con gancho anal', precio: 797, imagen: 'img/conjunto-gancho-anal-bdsm.jpg' },
+  { id: 7, nombre: 'Collar con clip', precio: 250, imagen: 'img/collar-con-clip-bdsm.jpg' },
+  { id: 14, nombre: 'Sujetador BDSM', precio: 217, imagen: 'img/juego-sujetador-bdsm-ojos.jpg' },
+  { id: 15, nombre: 'Sujetator BDSM por niveles', precio: 345, imagen: 'img/juguete-sexual-para-mujer-bdsm.jpg' },
+  { id: 16, nombre: 'Látigo para juegos', precio: 197, imagen: 'img/latigo-para-juegos-adulto.jpg' },
+  { id: 12, nombre: 'Expansor anal ajustable n1', precio: 720, imagen: 'img/expansor-anal-ajustable.jpg' },
+  { id: 2, nombre: 'Expansor anal ajustable n2', precio: 792, imagen: 'img/ana-expansible-acero-ajustable.jpg' },
 ];
 
 const productosList = document.getElementById('productos-list');
