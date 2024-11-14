@@ -163,14 +163,16 @@ nav a {
 .carrusel-container {
   position: relative;
   overflow: hidden;
-  height: 500px;
+  /*height: 500px;*/
   width: 100%;
-  max-width: 400px;
+  max-width: 600px;
   margin: 20px auto;
+  border-radius: 15px;
 }
 
 /* Estilo del carrusel */
 .carrusel {
+
   height: 50%;
   display: flex;
   align-items: center;
@@ -181,7 +183,7 @@ nav a {
 .carrusel{
   min-width: 100%; /* 4 productos visibles */
   box-sizing: border-box;
-  padding: 5px;
+ 
   
 }
 .producto {
