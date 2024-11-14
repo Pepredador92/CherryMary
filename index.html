@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CherryMary - Online</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
   <!-- -----------------------HEADER------------------------------ -->
   <!-- Header -->
@@ -16,7 +18,7 @@
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#productos">Productos</a>
+        <li><a href="#productos">Categorias</a>
           <ul class="submenu">
             <li onclick="filtrarProductos('vibradores')">Vibradores</li>
             <li onclick="filtrarProductos('consoladores')">Consoladores</li>
@@ -42,26 +44,26 @@
   </section>
 
   <!-- -----------------------CARRUSEL------------------------------ -->
- <!-- carruell Section / se agregarán los producto del carrusell -->
- <section id="novedades" class="novedades">
-  <h2>¡Promociones!</h2>
-  <div class="carrusel-container">
-    <button class="prev-btn">&#10094;</button>
-    <div class="carrusel" id="carrusel">
-      <!-- Los productos se generarán aquí con JavaScript -->
+  <!-- carruell Section / se agregarán los producto del carrusell -->
+  <section id="novedades" class="novedades">
+    <h2>¡Promociones!</h2>
+    <div class="carrusel-container">
+      <button class="prev-btn">&#10094;</button>
+      <div class="carrusel" id="carrusel">
+        <!-- Los productos se generarán aquí con JavaScript -->
+      </div>
+      <button class="next-btn">&#10095;</button>
     </div>
-    <button class="next-btn">&#10095;</button>
-  </div>
-</section>
+  </section>
 
-  
+
   <!-- -----------------------PRODUCTOS------------------------------ -->
   <!-- Catálogo de Productos -->
- <!-- Secciones de Productos -->
- <section id="productos" class="productos-seccion">
-  <h2>Productos en Stock</h2>
-  <div class="productos-container" id="productos-list"></div>
-</section>
+  <!-- Secciones de Productos -->
+  <section id="productos" class="productos-seccion">
+    <h2>Productos en Stock</h2>
+    <div class="productos-container" id="productos-list"></div>
+  </section>
 
   <!-- -----------------------CARRITO------------------------------ -->
   <!-- Carrito de Compras -->
@@ -72,26 +74,31 @@
     <button class="checkout-btn">Generar Ticket PDF</button>
     <button class="whatsapp-btn" onclick="enviarWhatsApp()">Enviar Whats</button>
   </div>
-  
-<!-- -----------------------PREGUNTAS------------------------------ -->
+
+  <!-- -----------------------PREGUNTAS------------------------------ -->
   <!-- FAQ -->
   <section id="faq" class="faq">
     <h4>Preguntas de nuestros clientes</h4>
     <details>
       <summary>¿Cuál es el proceso para pagar?</summary>
-      <p>Si deseas pagar por oxxo o tranferencia, deberás envirnos tu recibo de pago vía Whatsapp al 492123467 e inmediatamente comenzaremos a procesar tu pedido.</p>
+      <p>Si deseas pagar por oxxo o tranferencia, solo debes enviar tu recibo de pago vía Whatsapp al 492123467 e
+        inmediatamente comenzaremos a procesar tu pedido.</p>
     </details>
     <details>
       <summary>¿Qué métodos de pago aceptan?</summary>
-      <p>Aceptamos transferencia bancaria, pago en oxxo, o en efectivo al momento de recibir tu pedido.</p>
+      <p>Aceptamos transferencia bancaria, pago en oxxo, o en efectivo al momento de recibir tu pedido, solo especifica
+        por Whatsapp que tu pago será en efectivo.</p>
     </details>
     <details>
       <summary>¿Cuándo llega mi pedido?</summary>
-      <p>Si ordenas temprano, tu pedido llegará de 1 a 2 horas, ya que contamos con stock local en la ciudad de Zacatecas y Guadalupe.</p>
+      <p>Si ordenas temprano, tu pedido llegará en 1 o 2 horas, ya que contamos con stock local en la ciudad de
+        Zacatecas y Guadalupe.</p>
     </details>
     <details>
       <summary>¿Cómo llegará mi paquete?</summary>
-      <p>Usamos cajas sencillas o bolsas de tienas locales, sin logos ni etiquetas de nuestra tienda ‘Cherry Mary’. Éstas suelen ser de pastelerías, tiendas departamentas, o super mercados, con el objetivo de mantener la discreción.</p>
+      <p>Usamos cajas sencillas o bolsas de tienas locales, sin logos ni etiquetas de nuestra tienda ‘Cherry Mary’.
+        Éstas suelen ser de pastelerías, tiendas departamentas, o super mercados, con el objetivo de mantener la
+        discreción.</p>
     </details>
   </section>
 
@@ -117,4 +124,5 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script src="script.js"></script>
 </body>
+
 </html>

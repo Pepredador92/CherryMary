@@ -67,9 +67,9 @@ button {
   background-color: #e75c4d;
   color: white;
   border: none;
-  padding: 6px 5px;
+  padding: 5px 10px;
   cursor: pointer;
-  border-radius: 5px;
+  border-radius: 10px;
   font-weight: bold;
 }
 
@@ -178,7 +178,13 @@ nav a {
 }
 
 /* Tarjetas de producto dentro del carrusel */
-.carrusel .producto {
+.carrusel{
+  min-width: 100%; /* 4 productos visibles */
+  box-sizing: border-box;
+  padding: 5px;
+  
+}
+.producto {
   min-width: 100%; /* 4 productos visibles */
   height: 300px;
   box-sizing: border-box;
@@ -192,8 +198,7 @@ nav a {
   width: 100%;  /* La imagen ocupa todo el ancho de la tarjeta */
   height: 400px; /* Altura fija para mantener el tamaño uniforme */
   object-fit: cover; /* Asegura que la imagen se recorte sin distorsión */
-  border-radius: 10px; /* Bordes redondeados para un estilo más agradable */
-  margin-bottom: 10px;
+  border-radius: 20px; /* Bordes redondeados para un estilo más agradable */
 }
 
 /* Botones de navegación */
@@ -228,17 +233,17 @@ nav a {
 .productos-container {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
-  gap: 10px; /* Espacio entre productos */
+  gap: 20px; /* Espacio entre productos */
   max-width: 400px; /* Limitar el ancho del contenedor*/
   margin: 0 auto; /* Centrar horizontalmente */
   padding: 10px;
 }
 
 .producto {
-  background-color: white;
-
+  /*background-color: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
+  height: 525px;
   border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-align: center;
 }
 
@@ -329,7 +334,7 @@ nav a {
   background-color: transparent;
   border: none;
   color: white;
-  font-size: 18px;
+  font-size: 12px;
   cursor: pointer;
 }
 
