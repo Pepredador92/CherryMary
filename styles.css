@@ -142,7 +142,12 @@ nav a {
   background-size: cover; /* Asegura que la imagen cubra toda la sección */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat;
-  padding: 200px;
+  height: 70vh; /* Ajusta la altura para ocupar todo el viewport */
+  width: 100%; /* Ocupa el 100% del ancho */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centra verticalmente el contenido */
+  align-items: center; /* Centra horizontalmente el contenido */
   text-align: center;
   color: #fff
 }
@@ -441,6 +446,7 @@ button, #carrito-btn {
   background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
   justify-content: center;
   align-items: center;
+  z-index: 1000;
 }
 
 .modal-content {
@@ -448,7 +454,9 @@ button, #carrito-btn {
   padding: 20px;
   border-radius: 10px;
   width: 90%;
-  max-width: 500px;
+  max-width: 600px;
+  max-height: 90%;
+  overflow: auto;
   text-align: center;
   position: relative;
 }
@@ -457,8 +465,12 @@ button, #carrito-btn {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 24px;
+  font-size: 1.5rem;
   cursor: pointer;
+  color: #333;
+}
+.close:hover{
+  color: #e75c4d;
 }
 
 .modal-image {
