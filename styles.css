@@ -9,26 +9,32 @@
 body {
   font-family: 'Arial', sans-serif;
   background-color: #f3f3f3;
-  color: #333;
+  color: #002d40;
   line-height: 1.6;
 }
 /* ---------------------ESTILO ENCABEZADOS---------------------- */
 /* Estilo general para los encabezados */
 h1 {
   color: #d16388;
-  font-size: 2.5rem; /* Tamaño del h1 */
+  font-size: 4.5rem; /* Tamaño del h1 */
   text-align: center;
-  margin: 20px 0;
+  }
+
+.subtituloHeader{
+  color: #d16388;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 /* Estilo personalizado solo para el h2 */
 h2 {
-  color: #e75c4d; /* Color más vibrante */
+  color: #1aa687; /* Color más vibrante */
   font-size: 2rem; /* Tamaño del h2 */
   text-align: center;
   margin: 10px 0;
   font-weight: bold; /* Negrita para más impacto */
 }
+
 h4 {
   color: #1d1d1d; /* Color más vibrante */
   font-size: 1rem; /* Tamaño del h4 */
@@ -64,7 +70,7 @@ p {
 }
 
 button {
-  background-color: #e75c4d;
+  background-color: #f56a79;
   color: white;
   border: none;
   padding: 5px 10px;
@@ -84,7 +90,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #e75c4d;
+  background-color: #ff414d;
   color: white;
   position: sticky;
   top: 0;
@@ -138,11 +144,11 @@ nav a {
 /* ---------------------ESTILO HERO SECTION---------------------- */
 /* Hero Section */
 .hero {
-  background-image: url('img/descubre-header.jpg'); /* Cambia 'tu-imagen.jpg' por el nombre de tu archivo */
+  background-image: url('img/product-header.jpg'); /* Cambia 'tu-imagen.jpg' por el nombre de tu archivo */
   background-size: cover; /* Asegura que la imagen cubra toda la sección */
   background-position: center; /* Centra la imagen */
   background-repeat: no-repeat;
-  height: 70vh; /* Ajusta la altura para ocupar todo el viewport */
+  height: 80vh; /* Ajusta la altura para ocupar todo el viewport */
   width: 100%; /* Ocupa el 100% del ancho */
   display: flex;
   flex-direction: column;
@@ -269,7 +275,7 @@ nav a {
 
 /* Precio rebajado en color más vibrante */
 .precio-rebajado {
-  color: #ff4081;
+  color: #1aa687;
   font-weight: bold;
   font-size: 1.2rem;
 }
