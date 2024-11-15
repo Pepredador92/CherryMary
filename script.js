@@ -16,7 +16,7 @@ novedades.forEach(producto => {
   const div = document.createElement('div');
   div.classList.add('producto');
   div.innerHTML = `
-    <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" />
+   <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" data-id="${producto.id}" />
     <h3>${producto.nombre}</h3>
     <p>
       <span class="precio-original">${producto.precioOriginal} MXN</span> 
@@ -25,6 +25,8 @@ novedades.forEach(producto => {
     <button onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
   `;
   carrusel.appendChild(div);
+  // Evento para abrir el modal al hacer clic en la imagen
+  div.querySelector(".producto-imagen").addEventListener("click", () => openModal(producto));
 });
 
 
@@ -91,18 +93,36 @@ productos.forEach(producto => {
   const div = document.createElement('div');
   div.classList.add('producto');
   div.innerHTML = `
-    <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" />
+     <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" data-id="${producto.id}" />
     <h3>${producto.nombre}</h3>
     <p>${producto.precio} MXN</p>
     <button onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
   `;
   productosList.appendChild(div);
+   // Evento para abrir el modal al hacer clic en la imagen
+   div.querySelector(".producto-imagen").addEventListener("click", () => openModal(producto));
 });
 
 const carritoElement = document.getElementById('carrito');
 const carritoItems = document.getElementById('carrito-items');
 const totalElement = document.getElementById('total');
 const carritoBtn = document.getElementById('carrito-btn');
+
+// Abrir el modal de la imagen cuando se haga click
+function openModal(producto) {
+  document.getElementById("modal-image").src = producto.imagen;
+  document.getElementById("modal-name").textContent = producto.nombre;
+  document.getElementById("modal-price").textContent = `${producto.precio} MXN`;
+
+  const addToCartButton = document.getElementById("add-to-cart-modal");
+  addToCartButton.onclick = () => agregarAlCarrito(producto.id);
+
+  document.getElementById("product-modal").style.display = "flex";
+}
+
+function closeModal() {
+  document.getElementById("product-modal").style.display = "none";
+}
 
 //-----------------------------productos ------------------------------------
 
