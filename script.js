@@ -1,8 +1,9 @@
+// Funciones para el carrito
 const novedades = [
-  { id: 1001, nombre: 'PinkSquirrell', precio: 680, precioOriginal: 880, imagen: 'img/pinkSquirrell.JPG' },
-  { id: 1002, nombre: 'SkinSense', precio: 461, precioOriginal: 667, imagen: 'img/SkinSense.jpg' },
-  { id: 1003, nombre: 'PurpleStick', precio: 506,precioOriginal: 717, imagen: 'img/PurpleStick.jpg' },
-  { id: 1004, nombre: 'VibiVarita', precio: 522,precioOriginal: 734, imagen: 'img/VibiVarita.jpg' },
+  { id: 1001, nombre: 'PinkSquirrell', precio: 680, precioOriginal: 880, imagen: 'img/pinkSquirrell.JPG', descripcion: 'Descripción detallada de PinkSquirrell.' },
+  { id: 1002, nombre: 'SkinSense', precio: 461, precioOriginal: 667, imagen: 'img/SkinSense.jpg', descripcion: 'Descripción detallada de SkinSense.' },
+  { id: 1003, nombre: 'PurpleStick', precio: 506,precioOriginal: 717, imagen: 'img/PurpleStick.jpg', descripcion: 'Descripción detallada de PurpleStick.' },
+  { id: 1004, nombre: 'VibiVarita', precio: 522,precioOriginal: 734, imagen: 'img/VibiVarita.jpg', descripcion: 'Descripción detallada de VibiVarita.' },
 ];
 
 const carrusel = document.getElementById('carrusel');
@@ -52,33 +53,33 @@ document.querySelector('.next-btn').addEventListener('click', () => moverCarruse
 //-----------------------------LISTA DE PRODUCTOS------------------------------------
 // Productos disponibles
 const productos = [
-  { id: 1, nombre: 'DinoRex', precio: 779, imagen: 'img/DinoRex.JPG', categoria: 'vibradores' },
-  { id: 10, nombre: 'LaBolaManda', precio: 592, imagen: 'img/labolaManda.jpg', categoria: 'anales' },
-  { id: 26, nombre: 'BackDoor1', precio: 665, imagen: 'img/backDoor1.jpg', categoria: 'anales' },
-  { id: 3, nombre: 'BackDoor1', precio: 665, imagen: 'img/backDoor2.jpg', categoria: 'anales' },
-  { id: 4, nombre: 'TentaCool', precio: 593, imagen: 'img/tentaCool.jpg', categoria: 'consoladores' },
-  { id: 5, nombre: 'BlackStick', precio: 504, imagen: 'img/BlackStick.JPG', categoria: 'vibradores' },
-  { id: 24, nombre: 'Amarre Completo', precio: 560, imagen: 'img/AmarreCompleto.jpg', categoria: 'restriccion' },
-  { id: 25, nombre: 'MagicHop', precio: 468, imagen: 'img/MagicHop.jpg', categoria: 'vibradores' },
-  { id: 18, nombre: 'HoldKit', precio: 416, imagen: 'img/HoldKit.jpg', categoria: 'restriccion' },
-  { id: 21, nombre: 'HuevitoPink', precio: 495, imagen: 'img/HuevitoPink.jpg', categoria: 'vibradores' },
-  { id: 22, nombre: 'KitDobleSujeción', precio: 399, imagen: 'img/KitDobleSujecion.JPG', categoria: 'restriccion' },
-  { id: 27, nombre: 'MoraLiza', precio: 360, imagen: 'img/MoraLiza.JPG', categoria: 'vibradores' },
-  { id: 23, nombre: 'VibrayPega', precio: 360, imagen: 'img/VibrayPega.JPG', categoria: 'vibradores' },
-  { id: 20, nombre: 'CabeZone', precio: 546, imagen: 'img/CabeZone.JPG', categoria: 'vibradores' },
-  { id: 6, nombre: 'PalitoClarito', precio: 509, imagen: 'img/PalitoClarito.jpg', categoria: 'consoladores' },
-  { id: 17, nombre: 'PaQuEncaje', precio: 231, imagen: 'img/PaqEncaje.JPG', categoria: 'anales' },
-  { id: 11, nombre: 'PinzasBDSM', precio: 296, imagen: 'img/PinzasBDSM.JPG', categoria: 'restriccion' },
-  { id: 9, nombre: 'DaleDoble', precio: 252, imagen: 'img/DaleDoble.jpg', categoria: 'consoladores' },
-  { id: 13, nombre: 'BolasDeDiez', precio: 211, imagen: 'img/BolasDeDiez.JPG', categoria: 'consoladores' },
-  { id: 19, nombre: 'SetSujetaFirme', precio: 220, imagen: 'img/KitDobleSujecion.JPG', categoria: 'restriccion' },
-  //{ id: 8, nombre: 'Conjunto con gancho anal', precio: 797, imagen: 'img/conjunto-gancho-anal-bdsm.jpg', categoria: 'anales' },
-  //{ id: 7, nombre: 'Collar con clip', precio: 250, imagen: 'img/collar-con-clip-bdsm.jpg', categoria: 'lenceria' },
-  //{ id: 14, nombre: 'Sujetador BDSM', precio: 217, imagen: 'img/juego-sujetador-bdsm-ojos.jpg', categoria: 'restriccion' },
-  //{ id: 15, nombre: 'Sujetator BDSM por niveles', precio: 345, imagen: 'img/juguete-sexual-para-mujer-bdsm.jpg', categoria: 'restriccion' },
-  //{ id: 16, nombre: 'Látigo para juegos', precio: 197, imagen: 'img/latigo-para-juegos-adulto.jpg', categoria: 'restriccion' },
-  //{ id: 12, nombre: 'Expansor anal ajustable n1', precio: 720, imagen: 'img/expansor-anal-ajustable.jpg', categoria: 'anales' },
-  //{ id: 2, nombre: 'Expansor anal ajustable n2', precio: 792, imagen: 'img/ana-expansible-acero-ajustable.jpg', categoria: 'anales' },
+  { id: 1, nombre: 'DinoRex', precio: 779, imagen: 'img/DinoRex.JPG', categoria: 'vibradores', descripcion: 'Descripción detallada de DinoRex.' },
+  { id: 10, nombre: 'LaBolaManda', precio: 592, imagen: 'img/labolaManda.jpg', categoria: 'anales', descripcion: 'Descripción detallada de LaBolaManda.' },
+  { id: 26, nombre: 'BackDoor1', precio: 665, imagen: 'img/backDoor1.jpg', categoria: 'anales', descripcion: 'Descripción detallada de BackDoor1.' },
+  { id: 3, nombre: 'BackDoor1', precio: 665, imagen: 'img/backDoor2.jpg', categoria: 'anales', descripcion: 'Descripción detallada de BackDoor1 (alternativo).' },
+  { id: 4, nombre: 'TentaCool', precio: 593, imagen: 'img/tentaCool.jpg', categoria: 'consoladores', descripcion: 'Descripción detallada de TentaCool.' },
+  { id: 5, nombre: 'BlackStick', precio: 504, imagen: 'img/BlackStick.JPG', categoria: 'vibradores', descripcion: 'Descripción detallada de BlackStick.' },
+  { id: 24, nombre: 'Amarre Completo', precio: 560, imagen: 'img/AmarreCompleto.jpg', categoria: 'restriccion', descripcion: 'Descripción detallada de Amarre Completo.' },
+  { id: 25, nombre: 'MagicHop', precio: 468, imagen: 'img/MagicHop.jpg', categoria: 'vibradores', descripcion: 'Descripción detallada de MagicHop.' },
+  { id: 18, nombre: 'HoldKit', precio: 416, imagen: 'img/HoldKit.jpg', categoria: 'restriccion', descripcion: 'Descripción detallada de HoldKit.' },
+  { id: 21, nombre: 'HuevitoPink', precio: 495, imagen: 'img/HuevitoPink.jpg', categoria: 'vibradores', descripcion: 'Descripción detallada de HuevitoPink.' },
+  { id: 22, nombre: 'KitDobleSujeción', precio: 399, imagen: 'img/KitDobleSujecion.JPG', categoria: 'restriccion', descripcion: 'Descripción detallada de KitDobleSujeción.' },
+  { id: 27, nombre: 'MoraLiza', precio: 360, imagen: 'img/MoraLiza.JPG', categoria: 'vibradores', descripcion: 'Descripción detallada de MoraLiza.' },
+  { id: 23, nombre: 'VibrayPega', precio: 360, imagen: 'img/VibrayPega.JPG', categoria: 'vibradores', descripcion: 'Descripción detallada de VibrayPega.' },
+  { id: 20, nombre: 'CabeZone', precio: 546, imagen: 'img/CabeZone.JPG', categoria: 'vibradores', descripcion: 'Descripción detallada de CabeZone.' },
+  { id: 6, nombre: 'PalitoClarito', precio: 509, imagen: 'img/PalitoClarito.jpg', categoria: 'consoladores', descripcion: 'Descripción detallada de PalitoClarito.' },
+  { id: 17, nombre: 'PaQuEncaje', precio: 231, imagen: 'img/PaqEncaje.JPG', categoria: 'anales', descripcion: 'Descripción detallada de PaQuEncaje.' },
+  { id: 11, nombre: 'PinzasBDSM', precio: 296, imagen: 'img/PinzasBDSM.JPG', categoria: 'restriccion', descripcion: 'Descripción detallada de PinzasBDSM.' },
+  { id: 9, nombre: 'DaleDoble', precio: 252, imagen: 'img/DaleDoble.jpg', categoria: 'consoladores', descripcion: 'Descripción detallada de DaleDoble.' },
+  { id: 13, nombre: 'BolasDeDiez', precio: 211, imagen: 'img/BolasDeDiez.JPG', categoria: 'consoladores', descripcion: 'Descripción detallada de BolasDeDiez.' },
+  { id: 19, nombre: 'SetSujetaFirme', precio: 220, imagen: 'img/KitDobleSujecion.JPG', categoria: 'restriccion', descripcion: 'Descripción detallada de SetSujetaFirme.' },
+  //{ id: 8, nombre: 'Conjunto con gancho anal', precio: 797, imagen: 'img/conjunto-gancho-anal-bdsm.jpg', categoria: 'anales', descripcion: 'Descripción detallada de Conjunto con gancho anal.' },
+  //{ id: 7, nombre: 'Collar con clip', precio: 250, imagen: 'img/collar-con-clip-bdsm.jpg', categoria: 'lenceria', descripcion: 'Descripción detallada de Collar con clip.' },
+  //{ id: 14, nombre: 'Sujetador BDSM', precio: 217, imagen: 'img/juego-sujetador-bdsm-ojos.jpg', categoria: 'restriccion', descripcion: 'Descripción detallada de Sujetador BDSM.' },
+  //{ id: 15, nombre: 'Sujetator BDSM por niveles', precio: 345, imagen: 'img/juguete-sexual-para-mujer-bdsm.jpg', categoria: 'restriccion', descripcion: 'Descripción detallada de Sujetator BDSM por niveles.' },
+  //{ id: 16, nombre: 'Látigo para juegos', precio: 197, imagen: 'img/latigo-para-juegos-adulto.jpg', categoria: 'restriccion', descripcion: 'Descripción detallada de Látigo para juegos.' },
+  //{ id: 12, nombre: 'Expansor anal ajustable n1', precio: 720, imagen: 'img/expansor-anal-ajustable.jpg', categoria: 'anales', descripcion: 'Descripción detallada de Expansor anal ajustable n1.' },
+  //{ id: 2, nombre: 'Expansor anal ajustable n2', precio: 792, imagen: 'img/ana-expansible-acero-ajustable.jpg', categoria: 'anales', descripcion: 'Descripción detallada de Expansor anal ajustable n2.' },
 ];
 
 const productosList = document.getElementById('productos-list');
@@ -104,20 +105,49 @@ const carritoItems = document.getElementById('carrito-items');
 const totalElement = document.getElementById('total');
 const carritoBtn = document.getElementById('carrito-btn');
 
+// Variable para guardar la referencia al event listener del modal
+let modalClickListener;
+
 // Abrir el modal de la imagen cuando se haga click
 function openModal(producto) {
+  const modal = document.getElementById("product-modal");
   document.getElementById("modal-image").src = producto.imagen;
   document.getElementById("modal-name").textContent = producto.nombre;
   document.getElementById("modal-price").textContent = `${producto.precio} MXN`;
 
-  const addToCartButton = document.getElementById("add-to-cart-modal");
-  addToCartButton.onclick = () => agregarAlCarrito(producto.id);
+  // Usar la descripción del producto si existe, de lo contrario, una genérica
+  document.getElementById("modal-description").textContent = producto.descripcion || "Descripción no disponible.";
 
-  document.getElementById("product-modal").style.display = "flex";
+  const addToCartButton = document.getElementById("add-to-cart-modal");
+  addToCartButton.onclick = () => {
+    agregarAlCarrito(producto.id);
+    // Opcional: cerrar modal después de agregar al carrito
+    // closeModal(); 
+  };
+
+  modal.style.display = "flex";
+
+  // Cerrar modal al hacer clic fuera del contenido
+  // Asegurarse de que el listener solo se añade una vez o se limpia correctamente
+  if (modalClickListener) {
+    modal.removeEventListener('click', modalClickListener);
+  }
+  modalClickListener = function(event) {
+    if (event.target === modal) {
+      closeModal();
+    }
+  };
+  modal.addEventListener('click', modalClickListener);
 }
 
 function closeModal() {
-  document.getElementById("product-modal").style.display = "none";
+  const modal = document.getElementById("product-modal");
+  modal.style.display = "none";
+  // Remover el event listener para evitar acumulaciones y fugas de memoria
+  if (modalClickListener) {
+    modal.removeEventListener('click', modalClickListener);
+    modalClickListener = null; // Limpiar la referencia
+  }
 }
 
 //-----------------------------productos ------------------------------------
@@ -231,18 +261,19 @@ function actualizarCarrito() {
   // Actualizar el botón del carrito con comillas invertidas
   carritoBtn.textContent = `🛒 Carrito (${carrito.reduce((acc, item) => acc + item.cantidad, 0)})`;
 }
-// confirmar pedio por whatsapp
+
+// Confirmar pedido por WhatsApp
 function enviarWhatsApp() {
   const total = document.getElementById('total').textContent;
-  const productos = carrito.map(producto => producto.nombre).join(', ');
+  const productosEnCarrito = carrito.map(producto => `${producto.nombre} (x${producto.cantidad})`).join(', '); // Modificado para incluir cantidad
   const mensaje = encodeURIComponent(
-    `Hola, deseo confirmar mi pedido por un total de ${total} MXN. Los productos que he ordenado son: ${productos}.`
-  );  const numeroWhatsApp = "524921707433"; // Número de WhatsApp
+    `Hola, deseo confirmar mi pedido por un total de ${total} MXN. Los productos que he ordenado son: ${productosEnCarrito}.`
+  );
+  const numeroWhatsApp = "524921707433"; // Número de WhatsApp
 
   const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
   window.open(url, '_blank');
 }
-
 
 // Función para imprimir el ticket en pantalla y generar PDF
 function imprimirTicket() {
@@ -341,7 +372,6 @@ function imprimirTicket() {
  // Descargar el PDF
  doc.save('ticket-compra.pdf');
 }
-
 
 // Asignar la función al botón de "Finalizar Compra"
 document.querySelector('.checkout-btn').addEventListener('click', imprimirTicket);

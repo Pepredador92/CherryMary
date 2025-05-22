@@ -1,5 +1,4 @@
 /* ---------------------ESTILO GENERAL---------------------- */
-/* Estilo General */
 * {
   margin: 0;
   padding: 0;
@@ -12,47 +11,6 @@ body {
   color: #002d40;
   line-height: 1.6;
 }
-/* ---------------------ESTILO ENCABEZADOS---------------------- */
-/* Estilo general para los encabezados */
-h1 {
-  color: #d16388;
-  font-size: 4.5rem; /* Tamaño del h1 */
-  text-align: center;
-  }
-
-.subtituloHeader{
-  color: #d16388;
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-/* Estilo personalizado solo para el h2 */
-h2 {
-  color: #1aa687; /* Color más vibrante */
-  font-size: 2rem; /* Tamaño del h2 */
-  text-align: center;
-  margin: 10px 0;
-  font-weight: bold; /* Negrita para más impacto */
-}
-
-h4 {
-  color: #1d1d1d; /* Color más vibrante */
-  font-size: 1rem; /* Tamaño del h4 */
-  text-align: left;
-  margin: 30px 0;
-  font-weight: bold; /* Negrita para más impacto */
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 5px;
-}
-
-nav ul li {
-  position: relative;
-}
-
 
 ul {
   font-size: small;
@@ -82,8 +40,37 @@ button {
 button:hover {
   background-color: #e75c4d;
 }
+
+/* ---------------------ESTILO ENCABEZADOS---------------------- */
+h1 {
+  color: #d16388;
+  font-size: 4.5rem;
+  text-align: center;
+}
+
+.subtituloHeader {
+  color: #d16388;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  color: #1aa687;
+  font-size: 2rem;
+  text-align: center;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+h4 {
+  color: #1d1d1d;
+  font-size: 1rem;
+  text-align: left;
+  margin: 30px 0;
+  font-weight: bold;
+}
+
 /* ---------------------ESTILO HEADER---------------------- */
-/* Header */
 header {
   position: fixed;
   display: flex;
@@ -95,6 +82,29 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
+}
+
+.logo-imagen {
+  width: 75px;
+  height: auto;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 5px;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
 }
 
 .submenu {
@@ -122,104 +132,70 @@ nav ul li:hover .submenu {
   color: white;
 }
 
-.logo-imagen {
-  width: 75px; 
-  height: auto;
-  margin-right: 10px; /* Espacio entre la imagen y el texto */
-  vertical-align: middle; /* Alinea la imagen con el texto */
-}
-
-
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 5px;
-}
-
-nav a {
-  text-decoration: none;
-  color: white;
-  font-weight: bold;
-}
 /* ---------------------ESTILO HERO SECTION---------------------- */
-/* Hero Section */
 .hero {
-  background-image: url('img/product-header.jpg'); /* Cambia 'tu-imagen.jpg' por el nombre de tu archivo */
-  background-size: cover; /* Asegura que la imagen cubra toda la sección */
-  background-position: center; /* Centra la imagen */
+  background-image: url('img/product-header.jpg');
+  background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
-  height: 80vh; /* Ajusta la altura para ocupar todo el viewport */
-  width: 100%; /* Ocupa el 100% del ancho */
+  height: 80vh;
+  width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Centra verticalmente el contenido */
-  align-items: center; /* Centra horizontalmente el contenido */
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  color: #fff
+  color: #fff;
 }
 
 .hero .cta {
   margin-top: 20px;
 }
+
 /* ---------------------ESTILO NOVEDADES---------------------- */
-/* Estilo para la sección de novedades */
 .novedades {
   padding: 20px;
   max-width: 1000px;
   margin: 0 auto;
   text-align: center;
 }
-/* ---------------------CARRUSELL---------------------- */
-/* Contenedor del carrusel */
+
+/* ---------------------CARRUSEL---------------------- */
 .carrusel-container {
   position: relative;
   overflow: hidden;
-  /*height: 500px;*/
   width: 100%;
   max-width: 600px;
   margin: 20px auto;
   border-radius: 15px;
 }
 
-/* Estilo del carrusel */
 .carrusel {
-
   height: 50%;
   display: flex;
   align-items: center;
   transition: transform 0.5s ease;
 }
 
-/* Tarjetas de producto dentro del carrusel */
-.carrusel{
-  min-width: 100%; /* 4 productos visibles */
-  box-sizing: border-box;
- 
-  
-}
 .producto {
-  min-width: 100%; /* 4 productos visibles */
+  min-width: 100%;
   height: 300px;
   box-sizing: border-box;
   padding: 5px;
-  
 }
 
-/* ---------------------IMAGENES DE PRODUCTOS---------------------- */
-/* Imágenes de los productos */
 .producto-imagen {
-  width: 100%;  /* La imagen ocupa todo el ancho de la tarjeta */
-  height: 400px; /* Altura fija para mantener el tamaño uniforme */
-  object-fit: cover; /* Asegura que la imagen se recorte sin distorsión */
-  border-radius: 20px; /* Bordes redondeados para un estilo más agradable */
-  transition: transform 0.3s ease; /*transición suave*/
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
 }
 
 .producto-imagen:hover {
-  transform: scale(1.05); /* Zoom de 5% */
+  transform: scale(1.05);
 }
 
-/* Botones de navegación */
 .prev-btn, .next-btn {
   position: absolute;
   top: 50%;
@@ -247,25 +223,21 @@ nav a {
 }
 
 /* ---------------------ESTILO PRODUCTOS---------------------- */
-/* Catálogo de Productos */
 .productos-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px; /* Espacio entre productos */
-  max-width: 800px; /* Limitar el ancho del contenedor*/
-  margin: 0 auto; /* Centrar horizontalmente */
+  gap: 20px;
+  max-width: 800px;
+  margin: 0 auto;
   padding: 10px;
 }
 
 .producto {
-  /*background-color: white;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);*/
   height: 525px;
   border-radius: 5px;
   text-align: center;
 }
 
-/* Precio original tachado */
 .precio-original {
   text-decoration: line-through;
   color: #888;
@@ -273,25 +245,10 @@ nav a {
   font-size: 1rem;
 }
 
-/* Precio rebajado en color más vibrante */
 .precio-rebajado {
   color: #1aa687;
   font-weight: bold;
   font-size: 1.2rem;
-}
-
-
-/* Adaptabilidad a pantallas más pequeñas */
-@media (max-width: 768px) {
-  .productos-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 columnas en tablets */
-  }
-}
-
-@media (max-width: 480px) {
-  .productos-container {
-    grid-template-columns: 1fr; /* 1 columna en teléfonos */
-  }
 }
 
 .producto button {
@@ -299,8 +256,6 @@ nav a {
 }
 
 /* ---------------------CARRITO---------------------- */
-/* Carrito de Compras */
-/* Carrito oculto inicialmente */
 #carrito {
   display: none;
   position: fixed;
@@ -314,10 +269,9 @@ nav a {
   overflow-y: auto;
   padding: 20px;
   transform: translateX(100%);
-  transition: transform 0.3s ease-in-out; /* Animación de transición */
+  transition: transform 0.3s ease-in-out;
 }
 
-/* Mostrar el carrito al agregar esta clase */
 #carrito.carrito-visible {
   display: block;
   transform: translateX(0);
@@ -346,7 +300,6 @@ nav a {
   margin-top: 20px;
 }
 
-/* Botón de Carrito Fijo */
 #carrito-btn {
   position: relative;
   background-color: transparent;
@@ -356,7 +309,6 @@ nav a {
   cursor: pointer;
 }
 
-/* Estilo del botón "Enviar Whats" */
 .whatsapp-btn {
   width: 100%;
   margin-top: 10px;
@@ -375,15 +327,12 @@ nav a {
 }
 
 /* ---------------------PREGUNTAS FRECUENTES---------------------- */
-/* FAQ */
-/* Contenedor de FAQ */
 .faq {
-  max-width: 800px; /* Limitar el ancho del FAQ */
-  margin: 0 auto; /* Centrar horizontalmente */
+  max-width: 800px;
+  margin: 0 auto;
   padding: 20px;
 }
 
-/* Estilo de las preguntas (details y summary) */
 .faq details {
   margin: 10px 0;
   padding: 10px;
@@ -403,7 +352,6 @@ nav a {
 }
 
 /* ---------------------CONTACTANOS---------------------- */
-/* Formulario de Contacto */
 .contacto form {
   display: flex;
   flex-direction: column;
@@ -420,7 +368,7 @@ nav a {
   border-radius: 5px;
 }
 
-/* Footer */
+/* ---------------------FOOTER---------------------- */
 footer {
   text-align: center;
   padding: 10px;
@@ -431,58 +379,204 @@ footer {
   width: 100%;
 }
 
-/* Animaciones y Transiciones */
-button, #carrito-btn {
-  transition: background-color 0.3s;
-}
-
-#carrito {
-  transition: transform 0.3s ease;
-  transform: translateX(100%);
-}
-
-/* -----------------Estilos para el modal-------------- */
+/* ---------------------MODAL---------------------- */
 .modal {
-  display: none; /* Oculto por defecto */
-  position: fixed;
-  top: 0;
+  display: none; /* Oculto por defecto, se activa con JS */
+  position: fixed; /* Posición fija para cubrir toda la pantalla */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro semi-transparente */
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  /* Para centrar el contenido del modal (display: flex se aplica vía JS): */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
 }
 
 .modal-content {
-  background-color: white;
+  background-color: #fff;
   padding: 20px;
-  border-radius: 10px;
-  width: 90%;
-  max-width: 600px;
-  max-height: 90%;
-  overflow: auto;
-  text-align: center;
-  position: relative;
-}
-
-.close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #333;
-}
-.close:hover{
-  color: #e75c4d;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 500px; /* Ajusta el ancho máximo según sea necesario */
+  text-align: center; /* Centra el contenido del modal */
+  position: relative; /* Para posicionar el botón de cierre */
+  max-height: 90vh; /* Altura máxima para el contenido del modal */
+  overflow-y: auto; /* Permite scroll si el contenido excede la altura */
 }
 
 .modal-image {
-  width: 100%;
+  max-width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  max-height: 300px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+}
+
+#modal-name {
+  font-size: 1.8rem;
+  color: #d16388;
+  margin-bottom: 10px;
+}
+
+#modal-price {
+  font-size: 1.2rem;
+  color: #1aa687;
+  margin-bottom: 10px;
+}
+
+#modal-description {
+  margin-top: 10px;
+  font-size: 1em; /* Tamaño de fuente base */
+  line-height: 1.6;
+  color: #333;
+  text-align: justify; /* Justifica el texto */
+}
+
+#add-to-cart-modal {
+  background-color: #ff69b4; /* Rosa característico */
+  color: white;
+  border: none;
+  padding: 8px 16px; /* Reducir el padding para hacerlo más pequeño */
+  font-size: 0.9em; /* Reducir el tamaño de la fuente */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: block; /* Para que ocupe su propia línea y se pueda centrar */
+  margin: 15px auto 0; /* Centrar el botón y añadir margen superior */
+}
+
+#add-to-cart-modal:hover {
+  background-color: #ff1493; /* Rosa más oscuro al pasar el mouse */
+}
+
+.close {
+  color: #aaa;
+  position: absolute; /* Posicionamiento absoluto respecto a modal-content */
+  top: 10px;
+  right: 15px;
+  font-size: 28px;
+  font-weight: bold;
+  background-color: #ff4d4d; /* Fondo rojo */
+  color: white; /* Color del texto (la X) */
+  border-radius: 4px; /* Bordes redondeados */
+  width: 30px; /* Ancho del botón */
+  height: 30px; /* Alto del botón */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* Asegura que la X esté centrada verticalmente */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+  background-color: #cc0000; /* Rojo más oscuro al pasar el mouse o enfocar */
+  text-decoration: none;
+}
+
+/* ---------------------RESPONSIVE MODAL---------------------- */
+@media (max-width: 600px) {
+  .modal-content {
+    width: 90%;
+    padding: 15px;
+  }
+
+  #modal-name {
+    font-size: 1.5rem;
+  }
+
+  #modal-description {
+    font-size: 0.9em; /* Reducir un poco más en pantallas pequeñas si es necesario */
+  }
+
+  #add-to-cart-modal {
+    padding: 8px 12px; /* Ajustar padding para pantallas pequeñas */
+    font-size: 0.85em; /* Ajustar fuente para pantallas pequeñas */
+  }
+
+  .close {
+    top: 8px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 15px;
+  }
+
+  .modal-image {
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen en pantallas pequeñas */
+  }
+
+  #modal-name {
+    font-size: 1.2rem;
+  }
+
+  #modal-price {
+    font-size: 1rem;
+  }
+
+  #add-to-cart-modal {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+}
+
+/* ---------------------RESPONSIVE---------------------- */
+@media (max-width: 768px) {
+  .productos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .productos-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ---------------------BURBUJAS FLOTANTES---------------------- */
+.burbujas-flotantes {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  z-index: 1000;
+}
+
+.burbuja {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #25d366; /* Color de WhatsApp */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.burbuja img {
+  width: 30px;
+  height: 30px;
+}
+
+.burbuja.instagram {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+}
+
+.burbuja:hover {
+  transform: scale(1.1);
 }
 
 
