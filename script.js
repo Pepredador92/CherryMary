@@ -13,10 +13,10 @@ novedades.forEach(producto => {
   const div = document.createElement('div');
   div.classList.add('producto');
   div.innerHTML = `
-   <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" data-id="${producto.id}" />
+    <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" data-id="${producto.id}" />
     <h3>${producto.nombre}</h3>
     <p>
-      <span class="precio-original">${producto.precioOriginal} MXN</span> 
+      <span class="precio-original" style="color: #999; text-decoration: line-through;">${producto.precioOriginal} MXN</span> 
       <span class="precio-rebajado">${producto.precio} MXN</span>
     </p>
     <button onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
@@ -90,14 +90,17 @@ productos.forEach(producto => {
   const div = document.createElement('div');
   div.classList.add('producto');
   div.innerHTML = `
-     <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" data-id="${producto.id}" />
+    <img src="${producto.imagen}" alt="${producto.nombre}" class="producto-imagen" data-id="${producto.id}" />
     <h3>${producto.nombre}</h3>
-    <p>${producto.precio} MXN</p>
+    <p>
+      <span class="precio-original" style="color: #999; text-decoration: line-through;">${producto.precioOriginal || ''} MXN</span> 
+      <span class="precio-rebajado">${producto.precio} MXN</span>
+    </p>
     <button onclick="agregarAlCarrito(${producto.id})">Agregar al Carrito</button>
   `;
   productosList.appendChild(div);
-   // Evento para abrir el modal al hacer clic en la imagen
-   div.querySelector(".producto-imagen").addEventListener("click", () => openModal(producto));
+  // Evento para abrir el modal al hacer clic en la imagen
+  div.querySelector(".producto-imagen").addEventListener("click", () => openModal(producto));
 });
 
 const carritoElement = document.getElementById('carrito');
@@ -193,10 +196,118 @@ function filtrarProductos(categoria) {
 
 
 //-----------------------------CARRITO ------------------------------------
-// Evento para mostrar/ocultar el carrito
+// Funcionalidad para mostrar el modal del carrito
+const carritoModal = document.createElement('div');
+carritoModal.id = 'carrito-modal';
+carritoModal.innerHTML = `
+  <div class="modal-content">
+    <div class="modal-header">Carrito</div>
+    <div class="modal-body" id="carrito-modal-body">
+      <!-- Los productos del carrito se renderizarán aquí -->
+    </div>
+    <div class="modal-footer">
+      <button class="checkout-btn">Generar Ticket PDF</button>
+      <button class="whatsapp-btn" onclick="enviarWhatsApp()">Enviar WhatsApp</button>
+    </div>
+  </div>
+`;
+
+// Agregar el modal al cuerpo del documento
+document.body.appendChild(carritoModal);
+
+// Asegurarse de que el modal no se muestre al cargar la página
+carritoModal.style.display = 'none';
+
+// Eliminar la funcionalidad de mostrar/ocultar el carritoElement
+carritoElement.style.display = 'none';
+
+// Mostrar el modal al hacer clic en el botón del carrito
 carritoBtn.addEventListener('click', () => {
-  carritoElement.classList.toggle('carrito-visible');
+  actualizarCarritoModal();
+  carritoModal.style.display = 'flex';
 });
+
+// Cerrar el modal al hacer clic fuera del contenido
+carritoModal.addEventListener('click', (event) => {
+  if (event.target === carritoModal) {
+    carritoModal.style.display = 'none';
+  }
+});
+
+// Actualizar el contenido del modal del carrito
+function actualizarCarritoModal() {
+  const carritoBody = document.getElementById('carrito-modal-body');
+  carritoBody.innerHTML = ''; // Limpiar el contenido previo
+
+  let total = 0;
+
+  carrito.forEach(producto => {
+    const item = document.createElement('div');
+    item.classList.add('carrito-item');
+    item.innerHTML = `
+      <p>${producto.nombre} - ${producto.precio} MXN</p>
+      <div class="carrito-controles">
+        <button class="btn-menos" data-id="${producto.id}">-</button>
+        <span>${producto.cantidad}</span>
+        <button class="btn-mas" data-id="${producto.id}">+</button>
+        <button class="btn-eliminar" data-id="${producto.id}">
+          🗑️
+        </button>
+      </div>
+    `;
+    carritoBody.appendChild(item);
+    total += producto.precio * producto.cantidad;
+  });
+
+  const totalElement = document.createElement('p');
+  totalElement.textContent = `Total: ${total} MXN`;
+  totalElement.style.fontWeight = 'bold';
+  carritoBody.appendChild(totalElement);
+
+  // Agregar eventos para los botones del carrito en el modal
+  carritoBody.addEventListener('click', (event) => {
+    const target = event.target;
+    const id = parseInt(target.dataset.id, 10);
+
+    if (target.classList.contains('btn-eliminar')) {
+      eliminarDelCarrito(id);
+    } else if (target.classList.contains('btn-mas')) {
+      cambiarCantidad(id, 1);
+    } else if (target.classList.contains('btn-menos')) {
+      cambiarCantidad(id, -1);
+    }
+
+    // Renderizar el carrito dinámicamente
+    renderCarrito();
+  });
+}
+
+// Función para renderizar el carrito dinámicamente en el modal
+function renderCarrito() {
+  carritoItems.innerHTML = ''; // Limpiar los elementos del carrito
+  let total = 0;
+
+  carrito.forEach(producto => {
+    const item = document.createElement('div');
+    item.classList.add('carrito-item');
+    item.innerHTML = `
+      <span>${producto.nombre}</span>
+      <div class="carrito-controles">
+        <button class="btn-menos" data-id="${producto.id}">-</button>
+        <span>${producto.cantidad}</span>
+        <button class="btn-mas" data-id="${producto.id}">+</button>
+        <button class="btn-eliminar" data-id="${producto.id}">🗑️</button>
+      </div>
+    `;
+    carritoItems.appendChild(item);
+    total += producto.precio * producto.cantidad;
+  });
+
+  const totalElement = document.createElement('p');
+  totalElement.textContent = `Total: ${total} MXN`;
+  totalElement.style.fontWeight = 'bold';
+  carritoItems.appendChild(totalElement);
+}
 
 // Agregar producto al carrito
 function agregarAlCarrito(id) {
@@ -260,6 +371,41 @@ function actualizarCarrito() {
 
   // Actualizar el botón del carrito con comillas invertidas
   carritoBtn.textContent = `🛒 Carrito (${carrito.reduce((acc, item) => acc + item.cantidad, 0)})`;
+
+  // Asegurar que el modal del carrito se actualice correctamente
+  function actualizarCarrito() {
+    carritoItems.innerHTML = ''; // Limpiar los elementos del carrito
+    let total = 0;
+
+    carrito.forEach(producto => {
+      const item = document.createElement('div');
+      item.classList.add('carrito-item');
+      item.innerHTML = `
+        <span>${producto.nombre}</span>
+        <div class="carrito-controles">
+          <button class="btn-menos" data-id="${producto.id}">-</button>
+          <span>${producto.cantidad}</span>
+          <button class="btn-mas" data-id="${producto.id}">+</button>
+          <button class="btn-eliminar" data-id="${producto.id}">🗑️</button>
+        </div>
+      `;
+      carritoItems.appendChild(item);
+      total += producto.precio * producto.cantidad;
+    });
+
+    const totalElement = document.createElement('p');
+    totalElement.textContent = `Total: ${total} MXN`;
+    totalElement.style.fontWeight = 'bold';
+    carritoItems.appendChild(totalElement);
+
+    // Actualizar el estado del modal
+    const carritoModal = document.getElementById('carrito-modal');
+    if (carrito.length > 0) {
+      carritoModal.classList.add('carrito-visible');
+    } else {
+      carritoModal.classList.remove('carrito-visible');
+    }
+  }
 }
 
 // Confirmar pedido por WhatsApp
@@ -269,7 +415,7 @@ function enviarWhatsApp() {
   const mensaje = encodeURIComponent(
     `Hola, deseo confirmar mi pedido por un total de ${total} MXN. Los productos que he ordenado son: ${productosEnCarrito}.`
   );
-  const numeroWhatsApp = "524921707433"; // Número de WhatsApp
+  const numeroWhatsApp = "524921002965"; // Número de WhatsApp
 
   const url = `https://wa.me/${numeroWhatsApp}?text=${mensaje}`;
   window.open(url, '_blank');
@@ -283,95 +429,155 @@ function imprimirTicket() {
     unit: 'mm',
     format: 'a4'
   });
-  // Configuración general del PDF
-  const margenIzq = 20;
-  let yPosition = 30; // Posición inicial vertical
 
-  // Título principal
-  doc.setFontSize(18);
+  const margenIzq = 20;
+  let yPosition = 30;
+
+  // Title
+  doc.setFontSize(22);
   doc.setTextColor(255, 102, 153);
   doc.setFont('helvetica', 'bold');
   doc.text('Cherry Mary - Ticket de Compra', 105, yPosition, { align: 'center' });
-  
   yPosition += 10;
 
-  // Línea separadora
+  // Add logo
+  const logoPath = 'http://localhost:8000/img/cherry-merry-logo1.png'; // Update to use HTTP server
+  try {
+    doc.addImage(logoPath, 'PNG', 80, 10, 50, 20);
+  } catch (error) {
+    console.error('Failed to load logo:', error);
+  }
+  yPosition += 30;
+
+  // Separator line
   doc.setDrawColor(200, 200, 200);
-  doc.line(margenIzq, yPosition, 190, yPosition); // Línea horizontal completa
+  doc.line(margenIzq, yPosition, 190, yPosition);
   yPosition += 10;
 
-  // Encabezados de la tabla
+  // Table headers with background color
+  doc.setFillColor(240, 240, 240);
+  doc.rect(margenIzq, yPosition - 5, 170, 10, 'F');
   doc.setFontSize(12);
   doc.setFont('helvetica', 'bold');
   doc.setTextColor(0, 0, 0);
   doc.text('Producto', margenIzq, yPosition);
   doc.text('Cantidad', 110, yPosition, { align: 'right' });
   doc.text('Precio', 170, yPosition, { align: 'right' });
-
   yPosition += 8;
 
-  // Detalle de productos
+  // Product details with alternating row colors
   let total = 0;
+  let isAlternateRow = false;
   carrito.forEach(producto => {
+    if (isAlternateRow) {
+      doc.setFillColor(245, 245, 245);
+      doc.rect(margenIzq, yPosition - 5, 170, 10, 'F');
+    }
     doc.setFont('helvetica', 'normal');
     doc.text(producto.nombre, margenIzq, yPosition);
     doc.text(`${producto.cantidad}`, 110, yPosition, { align: 'right' });
     doc.text(`${producto.precio * producto.cantidad} MXN`, 170, yPosition, { align: 'right' });
-
-    yPosition += 10; // Aumenta la posición vertical para el siguiente producto
+    yPosition += 10;
     total += producto.precio * producto.cantidad;
+    isAlternateRow = !isAlternateRow;
   });
 
-  // Línea separadora antes del total
+  // Separator line before total
   doc.line(margenIzq, yPosition, 190, yPosition);
   yPosition += 10;
 
-  // Total de la compra
-  doc.setFontSize(14);
+  // Total with bold and larger font
+  doc.setFontSize(16);
   doc.setFont('helvetica', 'bold');
+  doc.setTextColor(0, 0, 0);
   doc.text('Total:', 120, yPosition);
   doc.text(`${total} MXN`, 170, yPosition, { align: 'right' });
-
   yPosition += 15;
 
- // Instrucciones de compra---------------------------------
- doc.setFontSize(11);
- doc.setFont('helvetica', 'bold');
- doc.text('Pasos para finalizar tu compra:', margenIzq, yPosition);
- yPosition += 8;
+  // Payment instructions with icons
+  doc.setFontSize(12);
+  doc.setFont('helvetica', 'bold');
+  doc.text('Pasos para realizar tu pago:', margenIzq, yPosition);
+  yPosition += 8;
 
- doc.setFontSize(11);
- doc.setFont('helvetica', 'normal');
- doc.text('Gener Ticket -> Enviar comprobante de pago -> Recibir pedido.', margenIzq, yPosition);
- yPosition += 7;
+  doc.setFontSize(11);
+  doc.setFont('helvetica', 'normal');
+  doc.text('1. Genera tu ticket de compra.', margenIzq, yPosition);
+  yPosition += 7;
+  doc.text('2. Realiza el pago por OXXO, transferencia o en efectivo al recibir tu edido, utilizando los datos bancarios proporcionados.', margenIzq, yPosition);
+  yPosition += 7;
+  doc.text('3. Envía el comprobante de pago por WhatsApp.', margenIzq, yPosition);
+  yPosition += 7;
+  doc.text('4. Recibe tu pedido en la dirección indicada.', margenIzq, yPosition);
+  yPosition += 15;
 
- doc.setFontSize(11);
- doc.setFont('helvetica', 'bold');
- doc.text('Whatsapp: +52 492 170 7433', margenIzq, yPosition);
- yPosition += 7;
+  doc.setFontSize(11);
+  doc.setFont('helvetica', 'bold');
+  doc.text('Datos Bancarios:', margenIzq, yPosition);
+  yPosition += 8;
 
- // Información bancaria
- doc.setFont('helvetica', 'normal');
- doc.text('Puedes pagar en Oxxo, transferencia bancaria o en efectivo al recibir.', margenIzq, yPosition);
- yPosition += 15;
+  doc.setFontSize(11);
+  doc.setFont('helvetica', 'normal');
+  doc.text('Banco: BBVA Bancomer', margenIzq, yPosition);
+  yPosition += 7;
+  doc.text('Cuenta: 150 526 8982', margenIzq, yPosition);
+  yPosition += 7;
+  doc.text('CLABE: 012 947 01505268982 9', margenIzq, yPosition);
+  yPosition += 7;
+  doc.text('Tarjeta: 4152 3139 2443 6756', margenIzq, yPosition);
+  yPosition += 15;
 
- doc.setFont('helvetica', 'normal');
- doc.text('Banco: BBVA Bancomer', margenIzq, yPosition);
- yPosition += 7;
- doc.setFont('helvetica', 'bold');
- doc.text('Número de Cuenta: 0123456789', margenIzq, yPosition);
- yPosition += 7;
- doc.text('CLABE: 002012345678901234', margenIzq, yPosition);
- yPosition += 15;
+  doc.setFontSize(11);
+  doc.setFont('helvetica', 'bold');
+  doc.text('Contacto:', margenIzq, yPosition);
+  yPosition += 8;
 
- // Mensaje de agradecimiento
- doc.setFontSize(12);
- doc.setTextColor(100, 100, 100);
- doc.text('Gracias por tu compra en Cherry Mary ', 105, yPosition, { align: 'center' });
+  doc.setFontSize(11);
+  doc.setFont('helvetica', 'normal');
+  doc.text('WhatsApp: +52 492 100 2965', margenIzq, yPosition);
+  yPosition += 7;
+  doc.text('Métodos de pago: Oxxo, transferencia bancaria, efectivo.', margenIzq, yPosition);
+  yPosition += 15;
 
- // Descargar el PDF
- doc.save('ticket-compra.pdf');
+  // Thank you message with larger font and centered
+  doc.setFontSize(14);
+  doc.setTextColor(100, 100, 100);
+  doc.text('Gracias por tu compra en Cherry Mary', 105, yPosition, { align: 'center' });
+
+  // Download the PDF
+  doc.save('ticket-compra.pdf');
 }
 
-// Asignar la función al botón de "Finalizar Compra"
-document.querySelector('.checkout-btn').addEventListener('click', imprimirTicket);
+// Ensure DOM is fully loaded before accessing elements
+window.addEventListener('DOMContentLoaded', () => {
+  const botonesCheckout = document.querySelectorAll('.checkout-btn');
+  botonesCheckout.forEach(boton => {
+    boton.addEventListener('click', () => {
+      imprimirTicket();
+    });
+  });
+
+  // Update logo path to use HTTP server URL
+  const logoPath = 'http://localhost:8000/img/cherry-merry-logo1.png';
+  imprimirTicket.logoPath = logoPath;
+});
+
+// Funcionalidad para el menú de navegación responsivo
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('nav.main-nav');
+const submenuToggles = document.querySelectorAll('.submenu-toggle');
+
+// Alternar el menú principal
+menuToggle.addEventListener('click', () => {
+  const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
+  menuToggle.setAttribute('aria-expanded', !isExpanded);
+  mainNav.classList.toggle('nav-open');
+});
+
+// Alternar los submenús
+submenuToggles.forEach(toggle => {
+  toggle.addEventListener('click', () => {
+    const submenu = toggle.nextElementSibling;
+    submenu.classList.toggle('submenu-open');
+  });
+});

@@ -1,0 +1,170 @@
+[
+  {
+    "id": 1001,
+    "nombre": "PinkSquirrell",
+    "precio": 680,
+    "cantidad": 50
+  },
+  {
+    "id": 1002,
+    "nombre": "SkinSense",
+    "precio": 461,
+    "cantidad": 30
+  },
+  {
+    "id": 1003,
+    "nombre": "PurpleStick",
+    "precio": 506,
+    "cantidad": 20
+  },
+  {
+    "id": 1004,
+    "nombre": "VibiVarita",
+    "precio": 522,
+    "cantidad": 40
+  },
+  {
+    "id": 1001,
+    "nombre": "PinkSquirrell",
+    "precio": 680,
+    "cantidad": 50
+  },
+  {
+    "id": 1002,
+    "nombre": "SkinSense",
+    "precio": 461,
+    "cantidad": 30
+  },
+  {
+    "id": 1003,
+    "nombre": "PurpleStick",
+    "precio": 506,
+    "cantidad": 20
+  },
+  {
+    "id": 1004,
+    "nombre": "VibiVarita",
+    "precio": 522,
+    "cantidad": 40
+  },
+  {
+    "id": 1,
+    "nombre": "DinoRex",
+    "precio": 779,
+    "cantidad": 10
+  },
+  {
+    "id": 10,
+    "nombre": "LaBolaManda",
+    "precio": 592,
+    "cantidad": 15
+  },
+  {
+    "id": 26,
+    "nombre": "BackDoor1",
+    "precio": 665,
+    "cantidad": 20
+  },
+  {
+    "id": 3,
+    "nombre": "BackDoor1",
+    "precio": 665,
+    "cantidad": 20
+  },
+  {
+    "id": 4,
+    "nombre": "TentaCool",
+    "precio": 593,
+    "cantidad": 25
+  },
+  {
+    "id": 5,
+    "nombre": "BlackStick",
+    "precio": 504,
+    "cantidad": 30
+  },
+  {
+    "id": 24,
+    "nombre": "Amarre Completo",
+    "precio": 560,
+    "cantidad": 10
+  },
+  {
+    "id": 25,
+    "nombre": "MagicHop",
+    "precio": 468,
+    "cantidad": 15
+  },
+  {
+    "id": 18,
+    "nombre": "HoldKit",
+    "precio": 416,
+    "cantidad": 20
+  },
+  {
+    "id": 21,
+    "nombre": "HuevitoPink",
+    "precio": 495,
+    "cantidad": 25
+  },
+  {
+    "id": 22,
+    "nombre": "KitDobleSujeción",
+    "precio": 399,
+    "cantidad": 30
+  },
+  {
+    "id": 27,
+    "nombre": "MoraLiza",
+    "precio": 360,
+    "cantidad": 40
+  },
+  {
+    "id": 23,
+    "nombre": "VibrayPega",
+    "precio": 360,
+    "cantidad": 50
+  },
+  {
+    "id": 20,
+    "nombre": "CabeZone",
+    "precio": 546,
+    "cantidad": 20
+  },
+  {
+    "id": 6,
+    "nombre": "PalitoClarito",
+    "precio": 509,
+    "cantidad": 15
+  },
+  {
+    "id": 17,
+    "nombre": "PaQuEncaje",
+    "precio": 231,
+    "cantidad": 10
+  },
+  {
+    "id": 11,
+    "nombre": "PinzasBDSM",
+    "precio": 296,
+    "cantidad": 20
+  },
+  {
+    "id": 9,
+    "nombre": "DaleDoble",
+    "precio": 252,
+    "cantidad": 25
+  },
+  {
+    "id": 13,
+    "nombre": "BolasDeDiez",
+    "precio": 211,
+    "cantidad": 30
+  },
+  {
+    "id": 19,
+    "nombre": "SetSujetaFirme",
+    "precio": 220,
+    "cantidad": 40
+  }
+]

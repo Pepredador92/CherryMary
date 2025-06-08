@@ -72,29 +72,29 @@ h4 {
 
 /* ---------------------ESTILO HEADER---------------------- */
 header {
-  position: fixed;
+  position: sticky; /* Cambiado de fixed a sticky para un comportamiento más común */
+  top: 0;
+  z-index: 1000;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  background-color: #ff414d;
-  color: white;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
+  padding: 15px 25px; /* Aumentado el padding para más espacio */
+  background-color: #FFFFFF; /* Fondo blanco */
+  color: #111; /* Color de texto oscuro para contraste */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para profundidad */
 }
 
 .logo-imagen {
-  width: 75px;
+  width: 60px; /* Ajuste ligero del tamaño del logo */
   height: auto;
-  margin-right: 10px;
+  margin-right: 15px; /* Aumentado el margen */
   vertical-align: middle;
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 5px;
+  gap: 20px; /* Aumentado el espacio entre elementos de navegación */
 }
 
 nav ul li {
@@ -103,8 +103,14 @@ nav ul li {
 
 nav a {
   text-decoration: none;
-  color: white;
+  color: #111; /* Color de texto oscuro para los enlaces */
   font-weight: bold;
+  font-size: 0.9rem; /* Ajuste del tamaño de fuente */
+  transition: color 0.3s ease; /* Transición suave para hover */
+}
+
+nav a:hover {
+  color: #e75c4d; /* Color de hover (tomado del color original del botón) */
 }
 
 .submenu {
@@ -115,6 +121,8 @@ nav a {
   border: 1px solid #ddd;
   list-style: none;
   z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.15); /* Sombra para el submenu */
+  border-radius: 4px; /* Bordes redondeados para el submenu */
 }
 
 nav ul li:hover .submenu {
@@ -122,14 +130,46 @@ nav ul li:hover .submenu {
 }
 
 .submenu li {
-  padding: 5px 10px;
+  padding: 8px 12px; /* Ajuste de padding */
   cursor: pointer;
   color: #333;
+  font-size: 0.85rem; /* Ajuste de tamaño de fuente */
 }
 
 .submenu li:hover {
-  background-color: #e75c4d;
-  color: white;
+  background-color: #f5f5f5; /* Color de fondo suave al pasar el mouse */
+  color: #e75c4d;
+}
+
+/* Estilos para el botón de hamburguesa y toggle de submenú (base, ocultos) */
+.menu-toggle {
+  display: none; 
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 1001; 
+}
+
+.menu-toggle span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: #111; 
+  margin: 5px 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.submenu-toggle { 
+  display: none; 
+  background: none;
+  border: none;
+  color: #111;
+  font-size: 1.2rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  margin-left: 5px;
+  font-weight: bold;
 }
 
 /* ---------------------ESTILO HERO SECTION---------------------- */
@@ -225,34 +265,82 @@ nav ul li:hover .submenu {
 /* ---------------------ESTILO PRODUCTOS---------------------- */
 .productos-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .producto {
-  height: 525px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Ajustar el padding para más espacio interno */
+  height: 400px; /* Incrementar la altura de la tarjeta */
+}
+
+.producto:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+  width: 100%;
+  height: 70%; /* Incrementar la altura de la imagen dentro de la tarjeta */
+  object-fit: cover; /* Asegurar que la imagen cubra el espacio disponible */
+  margin-bottom: 10px;
+}
+
+.producto .etiqueta-promocion {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #e75c4d;
+  color: white;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 5px 10px;
   border-radius: 5px;
+}
+
+.producto h3 {
+  font-size: 1.4rem; /* Incrementar el tamaño de la fuente para el nombre del producto */
+  color: #333;
+  margin: 10px 0;
   text-align: center;
+  white-space: normal; /* Permitir que el texto ocupe varias líneas si es necesario */
+  overflow: visible; /* Asegurar que el texto no se corte */
 }
 
-.precio-original {
+.producto .precio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.producto .precio .precio-original {
   text-decoration: line-through;
-  color: #888;
-  margin-right: 10px;
-  font-size: 1rem;
+  color: #bbb; /* Cambiar a un tono más tenue */
+  font-size: 0.9rem;
 }
 
-.precio-rebajado {
+.producto .precio .precio-rebajado {
   color: #1aa687;
   font-weight: bold;
   font-size: 1.2rem;
 }
 
+/* Reducir el tamaño del botón de agregar al carrito para que la imagen pueda ser más grande */
 .producto button {
-  margin-top: 10px;
+  padding: 5px; /* Reducir el padding para hacerlo más pequeño */
+  font-size: 0.8rem; /* Reducir el tamaño de la fuente */
+  margin-top: auto; /* Mantener el botón en la parte inferior */
 }
 
 /* ---------------------CARRITO---------------------- */
@@ -301,29 +389,86 @@ nav ul li:hover .submenu {
 }
 
 #carrito-btn {
-  position: relative;
-  background-color: transparent;
-  border: none;
+  position: fixed;
+  bottom: 140px; /* Ajustado para que no se superponga con las burbujas de contacto */
+  right: 20px;
+  width: 45px; /* Tamaño similar a las burbujas de contacto */
+  height: 45px;
+  border-radius: 50%;
+  background-color: #e75c4d; /* Color original del botón */
   color: white;
-  font-size: 12px;
+  font-size: 0.8rem; /* Ajuste de tamaño de fuente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1050; /* Asegurar que esté por encima de otros elementos */
+  transition: transform 0.3s ease;
+}
+
+#carrito-btn:hover {
+  transform: scale(1.1);
+}
+
+/* ---------------------MODAL DEL CARRITO---------------------- */
+#carrito-modal {
+  display: none; /* Oculto por defecto */
+  position: fixed;
+  z-index: 1050; /* Asegurar que esté por encima de otros elementos */
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#carrito-modal .modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  text-align: center;
+}
+
+#carrito-modal .modal-header {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+#carrito-modal .modal-body {
+  text-align: left;
+}
+
+#carrito-modal .modal-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#carrito-modal .modal-footer button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.whatsapp-btn {
-  width: 100%;
-  margin-top: 10px;
+#carrito-modal .modal-footer .checkout-btn {
+  background-color: #e75c4d;
+  color: white;
+}
+
+#carrito-modal .modal-footer .whatsapp-btn {
   background-color: #25D366;
   color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.whatsapp-btn:hover {
-  background-color: #20B857;
 }
 
 /* ---------------------PREGUNTAS FRECUENTES---------------------- */
@@ -535,11 +680,171 @@ footer {
   .productos-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  /* Estilos para navegación responsiva */
+  header {
+    padding: 10px 15px; 
+  }
+
+  .menu-toggle {
+    display: block; 
+  }
+
+  nav.main-nav { 
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    width: 100%;
+    background-color: #fff; 
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none; 
+    flex-direction: column;
+    align-items: flex-start; 
+    padding: 0;
+  }
+
+  nav.main-nav.nav-open { 
+    display: flex;
+  }
+
+  nav.main-nav ul {
+    flex-direction: column;
+    width: 100%;
+    gap: 0; 
+  }
+
+  nav.main-nav ul li {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0; 
+    display: flex; /* Para alinear link y toggle */
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 15px; /* Espacio para el toggle del submenú */
+  }
+  
+  nav.main-nav ul li:last-child {
+    border-bottom: none;
+  }
+
+  nav.main-nav ul li > a { /* El enlace principal del item */
+    display: block; 
+    padding: 15px 20px; 
+    /* width: 100%; */ /* Ajustado para que funcione con flex */
+    flex-grow: 1;
+    font-size: 1rem; 
+  }
+
+  nav.main-nav ul li a:hover {
+    background-color: #f5f5f5; 
+  }
+
+  /* Submenú en móvil */
+  nav.main-nav ul li .submenu-toggle { /* Botón para desplegar Categorías */
+    display: inline-block; 
+    vertical-align: middle;
+    padding: 15px; /* Hacerlo más fácil de tocar */
+  }
+  
+  nav.main-nav ul li .submenu {
+    position: static; 
+    display: none; 
+    width: 100%;
+    box-shadow: none;
+    border: none;
+    border-top: 1px solid #e0e0e0; 
+    padding-left: 0; /* Sin padding extra, los items lo tendrán */
+    background-color: #f9f9f9; 
+    order: 1; /* Asegurar que el submenú aparezca debajo del item padre */
+    flex-basis: 100%; /* Ocupar todo el ancho */
+  }
+  
+  nav.main-nav ul li .submenu.submenu-open { 
+    display: block;
+  }
+
+  nav.main-nav ul li .submenu li {
+    padding: 12px 20px 12px 30px; /* Padding indentado para items de submenú */
+    font-size: 0.9rem;
+    border-bottom: none; /* Quitar borde individual si el contenedor principal lo tiene */
+    justify-content: flex-start; /* Alineación normal para items de submenú */
+  }
+  
+  nav.main-nav ul li .submenu li:hover {
+    background-color: #efefef;
+  }
+
+  /* Ocultar submenú de escritorio en móvil */
+  nav ul li:hover .submenu { 
+    display: none; 
+  }
+  
+  #carrito-btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
 }
 
 @media (max-width: 480px) {
   .productos-container {
     grid-template-columns: 1fr;
+  }
+}
+
+/* Animación del botón hamburguesa */
+.menu-toggle[aria-expanded="true"] span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(2) {
+  opacity: 0;
+}
+.menu-toggle[aria-expanded="true"] span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Reset para escritorio: asegurar que los toggles móviles y submenús abiertos en móvil se oculten */
+@media (min-width: 769px) {
+  nav.main-nav ul li .submenu.submenu-open {
+    display: none; 
+  }
+  nav.main-nav ul li .submenu-toggle {
+    display: none; 
+  }
+  /* Restaurar comportamiento de hover para submenú en escritorio */
+  nav ul li:hover > .submenu { 
+     display: block;
+  }
+  nav.main-nav.nav-open { /* Si el menú móvil quedó abierto y se redimensiona a escritorio */
+    display: flex !important; /* O la forma original que tenía, ej. block o inline-flex */
+    position: static;
+    flex-direction: row;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+  }
+  nav.main-nav.nav-open ul {
+    flex-direction: row;
+    gap: 20px; /* Restaurar gap de escritorio */
+  }
+   nav.main-nav.nav-open ul li {
+    width: auto;
+    border-bottom: none;
+    display: list-item; /* o el display original */
+    padding-right: 0;
+  }
+  nav.main-nav.nav-open ul li > a {
+    padding: initial; /* Restaurar padding original o específico de escritorio */
+    font-size: 0.9rem; /* Restaurar fuente de escritorio */
+  }
+   nav.main-nav.nav-open ul li .submenu {
+    position: absolute;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.15);
+    border-radius: 4px;
+    border-top: none;
+    order: 0;
+    flex-basis: auto;
   }
 }
 
@@ -550,33 +855,87 @@ footer {
   right: 20px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  z-index: 1000;
+  gap: 8px; /* Reducido el espacio entre burbujas */
+  z-index: 1050; /* Aumentado para asegurar que esté por encima de otros elementos */
 }
 
 .burbuja {
-  width: 60px;
-  height: 60px;
+  width: 45px; /* Reducido el tamaño */
+  height: 45px; /* Reducido el tamaño */
   border-radius: 50%;
   background-color: #25d366; /* Color de WhatsApp */
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* Ajustada la sombra */
   transition: transform 0.3s ease;
 }
 
 .burbuja img {
-  width: 30px;
-  height: 30px;
+  width: 22px; /* Reducido el tamaño del icono */
+  height: 22px; /* Reducido el tamaño del icono */
 }
 
 .burbuja.instagram {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  background-color: #e1306c; /* Color de Instagram */
+}
+
+.burbuja.facebook {
+  background-color: #3b5998; /* Color de Facebook */
+}
+
+.burbuja.whatsapp {
+  background-color: #25D366; /* Color de WhatsApp */
 }
 
 .burbuja:hover {
   transform: scale(1.1);
+}
+
+/* ---------------------ANIMACIONES---------------------- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0.9);
+  }
+  70% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Aplicar animaciones a elementos específicos */
+.hero {
+  animation: fadeIn 1s ease-out;
+}
+
+.producto {
+  animation: slideIn 0.5s ease-out;
+}
+
+.modal-content {
+  animation: pop 0.5s ease-out;
 }
 
 
