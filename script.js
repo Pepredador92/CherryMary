@@ -245,16 +245,9 @@ function actualizarCarritoModal() {
   carrito.forEach(producto => {
     const item = document.createElement('div');
     item.classList.add('carrito-item');
+    item.style.textAlign = 'center'; // Centrar el texto
     item.innerHTML = `
       <p>${producto.nombre} - ${producto.precio} MXN</p>
-      <div class="carrito-controles">
-        <button class="btn-menos" data-id="${producto.id}">-</button>
-        <span>${producto.cantidad}</span>
-        <button class="btn-mas" data-id="${producto.id}">+</button>
-        <button class="btn-eliminar" data-id="${producto.id}">
-          🗑️
-        </button>
-      </div>
     `;
     carritoBody.appendChild(item);
     total += producto.precio * producto.cantidad;
@@ -263,51 +256,8 @@ function actualizarCarritoModal() {
   const totalElement = document.createElement('p');
   totalElement.textContent = `Total: ${total} MXN`;
   totalElement.style.fontWeight = 'bold';
+  totalElement.style.textAlign = 'center'; // Centrar el texto del total
   carritoBody.appendChild(totalElement);
-
-  // Agregar eventos para los botones del carrito en el modal
-  carritoBody.addEventListener('click', (event) => {
-    const target = event.target;
-    const id = parseInt(target.dataset.id, 10);
-
-    if (target.classList.contains('btn-eliminar')) {
-      eliminarDelCarrito(id);
-    } else if (target.classList.contains('btn-mas')) {
-      cambiarCantidad(id, 1);
-    } else if (target.classList.contains('btn-menos')) {
-      cambiarCantidad(id, -1);
-    }
-
-    // Renderizar el carrito dinámicamente
-    renderCarrito();
-  });
-}
-
-// Función para renderizar el carrito dinámicamente en el modal
-function renderCarrito() {
-  carritoItems.innerHTML = ''; // Limpiar los elementos del carrito
-  let total = 0;
-
-  carrito.forEach(producto => {
-    const item = document.createElement('div');
-    item.classList.add('carrito-item');
-    item.innerHTML = `
-      <span>${producto.nombre}</span>
-      <div class="carrito-controles">
-        <button class="btn-menos" data-id="${producto.id}">-</button>
-        <span>${producto.cantidad}</span>
-        <button class="btn-mas" data-id="${producto.id}">+</button>
-        <button class="btn-eliminar" data-id="${producto.id}">🗑️</button>
-      </div>
-    `;
-    carritoItems.appendChild(item);
-    total += producto.precio * producto.cantidad;
-  });
-
-  const totalElement = document.createElement('p');
-  totalElement.textContent = `Total: ${total} MXN`;
-  totalElement.style.fontWeight = 'bold';
-  carritoItems.appendChild(totalElement);
 }
 
 // Agregar producto al carrito
@@ -325,25 +275,6 @@ function agregarAlCarrito(id) {
   actualizarCarrito();
 }
 
-
-// Eliminar producto del carrito
-function eliminarDelCarrito(id) {
-  carrito = carrito.filter(item => item.id !== id);
-  actualizarCarrito();
-}
-
-// Cambiar la cantidad de un producto en el carrito
-function cambiarCantidad(id, cantidad) {
-  const producto = carrito.find(item => item.id === id);
-  if (producto) {
-    producto.cantidad += cantidad;
-    if (producto.cantidad <= 0) {
-      eliminarDelCarrito(id);
-    }
-  }
-  actualizarCarrito();
-}
-
 // Actualizar el contenido del carrito
 function actualizarCarrito() {
   carritoItems.innerHTML = ''; // Limpiar los elementos del carrito
@@ -356,12 +287,6 @@ function actualizarCarrito() {
     // HTML del producto en template literal
     item.innerHTML = `
       <p>${producto.nombre} - ${producto.precio} MXN</p>
-      <div class="carrito-controles">
-        <button onclick="cambiarCantidad(${producto.id}, -1)">-</button>
-        <span>${producto.cantidad}</span>
-        <button onclick="cambiarCantidad(${producto.id}, 1)">+</button>
-        <button onclick="eliminarDelCarrito(${producto.id})">🗑️</button>
-      </div>
     `;
 
     carritoItems.appendChild(item);
@@ -372,41 +297,6 @@ function actualizarCarrito() {
 
   // Actualizar el botón del carrito con comillas invertidas
   carritoBtn.textContent = `🛒 Carrito (${carrito.reduce((acc, item) => acc + item.cantidad, 0)})`;
-
-  // Asegurar que el modal del carrito se actualice correctamente
-  function actualizarCarrito() {
-    carritoItems.innerHTML = ''; // Limpiar los elementos del carrito
-    let total = 0;
-
-    carrito.forEach(producto => {
-      const item = document.createElement('div');
-      item.classList.add('carrito-item');
-      item.innerHTML = `
-        <span>${producto.nombre}</span>
-        <div class="carrito-controles">
-          <button class="btn-menos" data-id="${producto.id}">-</button>
-          <span>${producto.cantidad}</span>
-          <button class="btn-mas" data-id="${producto.id}">+</button>
-          <button class="btn-eliminar" data-id="${producto.id}">🗑️</button>
-        </div>
-      `;
-      carritoItems.appendChild(item);
-      total += producto.precio * producto.cantidad;
-    });
-
-    const totalElement = document.createElement('p');
-    totalElement.textContent = `Total: ${total} MXN`;
-    totalElement.style.fontWeight = 'bold';
-    carritoItems.appendChild(totalElement);
-
-    // Actualizar el estado del modal
-    const carritoModal = document.getElementById('carrito-modal');
-    if (carrito.length > 0) {
-      carritoModal.classList.add('carrito-visible');
-    } else {
-      carritoModal.classList.remove('carrito-visible');
-    }
-  }
 }
 
 // Confirmar pedido por WhatsApp

@@ -432,7 +432,8 @@ nav ul li:hover .submenu {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   width: 90%;
-  max-width: 500px;
+  height: 90%;
+  max-width: 90%;
   max-height: 80vh;
   overflow-y: auto;
   text-align: center;
@@ -448,16 +449,30 @@ nav ul li:hover .submenu {
   text-align: left;
 }
 
+/* Centrar el contenido del carrito en el modal */
+#carrito-modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 #carrito-modal .modal-footer {
-  margin-top: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  padding: 10px;
+  background-color: #fff; /* Fondo blanco para contraste */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil para separación */
 }
 
 #carrito-modal .modal-footer button {
   padding: 10px 15px;
   border: none;
-  border-radius: 5px;
+  border-radius: 20px;
   cursor: pointer;
 }
 
