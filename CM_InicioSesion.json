@@ -1,0 +1,244 @@
+{
+  "name": "CM-InicioSesion",
+  "nodes": [
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"login\": false,\n  \"mensaje\": \"Usuario o contraseña incorrecta\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        20,
+        200
+      ],
+      "id": "ef76f7c6-39bf-4881-b98a-0de271494992",
+      "name": "error al iniciar sesion"
+    },
+    {
+      "parameters": {
+        "respondWith": "redirect",
+        "redirectURL": "http://localhost:5678/webhook-test/inicio-sesion",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        240,
+        200
+      ],
+      "id": "6b550eea-ec04-4537-8ae4-293e190e3c2c",
+      "name": "redirigir al inicio"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"login\": true,\n  \"mensaje\": \"Inicio de sesión exitoso\",\n  \"nombre\": \"={{ $json.nombre }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.4,
+      "position": [
+        20,
+        0
+      ],
+      "id": "d48b7c3e-1390-46b8-9bb1-44e1f4532b42",
+      "name": "inicio de sesion exitoso"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 2
+          },
+          "conditions": [
+            {
+              "id": "53d2b492-bdc9-4568-82a9-bae8e41888d3",
+              "leftValue": "={{ $json.telefono }}",
+              "rightValue": "={{ $node[\"normalizacion de datos\"].json.contraseña }}",
+              "operator": {
+                "type": "number",
+                "operation": "exists",
+                "singleValue": true
+              }
+            },
+            {
+              "id": "0dc98413-f158-49d2-9418-3c06166894af",
+              "leftValue": "={{ $json[\"contraseña\"] }}",
+              "rightValue": "={{ $node[\"normalizacion de datos\"].json.contraseña }}",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -200,
+        100
+      ],
+      "id": "3a9fec31-0507-4529-91f5-7db753155743",
+      "name": "verificar los datos"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1uqONhcwhVGJf6NT5MRC8bGLDzHiLaLXFI9o96Ing0BA",
+          "mode": "list",
+          "cachedResultName": "BaseDatosCherryMary",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1uqONhcwhVGJf6NT5MRC8bGLDzHiLaLXFI9o96Ing0BA/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": "gid=0",
+          "mode": "list",
+          "cachedResultName": "clientes",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1uqONhcwhVGJf6NT5MRC8bGLDzHiLaLXFI9o96Ing0BA/edit#gid=0"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "telefono",
+              "lookupValue": "={{ $json.telefono }}"
+            },
+            {
+              "lookupColumn": "=contraseña",
+              "lookupValue": "={{ $json[\"contraseña\"] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.6,
+      "position": [
+        -420,
+        100
+      ],
+      "id": "efd4f565-ab6b-4cb8-b068-5103dea4c86c",
+      "name": "buscar usuario",
+      "alwaysOutputData": true,
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "xBnCSOYwkcKfXwP3",
+          "name": "Google Sheets Local"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "inicio-sesion",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -860,
+        100
+      ],
+      "id": "3cd1c86b-ffbe-492c-bb10-018c3bcce954",
+      "name": "inicio de sesion",
+      "webhookId": "846383cf-2e51-479e-a882-931fa729af39"
+    },
+    {
+      "parameters": {
+        "jsCode": "return items.map(item => {\n  const body = item.json.body;\n\n  const telefono = body.telefono ? body.telefono.replace(/[^0-9]/g, '') : '';\n  const telefonoFinal = telefono.length > 10 ? telefono.slice(-10) : telefono;\n\n  const contraseña = body.contraseña ? body.contraseña.trim() : '';\n\n  return {\n    json: {\n      telefono: telefonoFinal,\n      contraseña\n    }\n  };\n});"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -640,
+        100
+      ],
+      "id": "5b226528-00ff-4ed1-bbc4-049d08c7d475",
+      "name": "normalizacion de datos"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "error al iniciar sesion": {
+      "main": [
+        [
+          {
+            "node": "redirigir al inicio",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "verificar los datos": {
+      "main": [
+        [
+          {
+            "node": "inicio de sesion exitoso",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "error al iniciar sesion",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "buscar usuario": {
+      "main": [
+        [
+          {
+            "node": "verificar los datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "inicio de sesion": {
+      "main": [
+        [
+          {
+            "node": "normalizacion de datos",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "normalizacion de datos": {
+      "main": [
+        [
+          {
+            "node": "buscar usuario",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "7aace62c-5812-4db9-9fc0-210042dca326",
+  "meta": {
+    "instanceId": "50f44b7b8732fa1ab8d4b71bf0f5b47716d18ea255dcac1384d337c2955f482c"
+  },
+  "id": "ifr1hi4O5maZk9Ii",
+  "tags": []
+}

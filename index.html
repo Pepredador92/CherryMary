@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cherry Mary - Sex Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Landing Page -->
+    <section id="landing" class="section active">
+        <div class="container">
+            <div class="landing-content">
+                <div class="logo-section">
+                    <img src="img/cherry-merry-logo1.png" alt="Cherry Mary Logo" class="logo">
+                    <h1 class="brand-title">Cherry Mary</h1>
+                    <p class="brand-subtitle">Tu tienda de confianza</p>
+                </div>
+                
+                <div class="action-buttons">
+                    <button id="btn-login" class="btn btn-primary">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Iniciar Sesión
+                    </button>
+                    <button id="btn-register" class="btn btn-secondary">
+                        <i class="fas fa-user-plus"></i>
+                        Registrarse
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Login Form -->
+    <section id="login-form" class="section">
+        <div class="container">
+            <div class="form-container">
+                <button class="back-btn" id="back-from-login">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver
+                </button>
+                
+                <div class="form-header">
+                    <h2>Iniciar Sesión</h2>
+                    <p>Ingresa tus datos para acceder</p>
+                </div>
+
+                <form id="loginForm" class="auth-form">
+                    <div class="form-group">
+                        <label for="login-telefono">Teléfono</label>
+                        <input type="tel" id="login-telefono" name="telefono" required 
+                               placeholder="Ingresa tu número de teléfono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="login-password">Contraseña</label>
+                        <div class="password-input">
+                            <input type="password" id="login-password" name="password" required 
+                                   placeholder="Ingresa tu contraseña">
+                            <button type="button" class="toggle-password" data-target="login-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-sign-in-alt"></i>
+                        Iniciar Sesión
+                    </button>
+                </form>
+
+                <div id="login-message" class="message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Register Form -->
+    <section id="register-form" class="section">
+        <div class="container">
+            <div class="form-container">
+                <button class="back-btn" id="back-from-register">
+                    <i class="fas fa-arrow-left"></i>
+                    Volver
+                </button>
+                
+                <div class="form-header">
+                    <h2>Registrarse</h2>
+                    <p>Crea tu cuenta en Cherry Mary</p>
+                </div>
+
+                <form id="registerForm" class="auth-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="register-nombre">Nombre</label>
+                            <input type="text" id="register-nombre" name="nombre" required 
+                                   placeholder="Tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <label for="register-apellido">Apellido</label>
+                            <input type="text" id="register-apellido" name="apellido" required 
+                                   placeholder="Tu apellido">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-telefono">Teléfono</label>
+                        <input type="tel" id="register-telefono" name="telefono" required 
+                               placeholder="Tu número de teléfono">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-whatsapp" class="checkbox-label">
+                            <input type="checkbox" id="register-whatsapp" name="whatsapp">
+                            <span class="checkmark"></span>
+                            ¿Tienes WhatsApp en este número?
+                        </label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-fecha">Fecha de Nacimiento</label>
+                        <input type="date" id="register-fecha" name="fechaNacimiento" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-password">Contraseña</label>
+                        <div class="password-input">
+                            <input type="password" id="register-password" name="password" required 
+                                   placeholder="Crea una contraseña">
+                            <button type="button" class="toggle-password" data-target="register-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="register-confirm-password">Confirmar Contraseña</label>
+                        <div class="password-input">
+                            <input type="password" id="register-confirm-password" name="confirmPassword" required 
+                                   placeholder="Confirma tu contraseña">
+                            <button type="button" class="toggle-password" data-target="register-confirm-password">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-full">
+                        <i class="fas fa-user-plus"></i>
+                        Registrarse
+                    </button>
+                </form>
+
+                <div id="register-message" class="message"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard -->
+    <section id="dashboard" class="section">
+        <div class="container">
+            <header class="dashboard-header">
+                <div class="welcome-section">
+                    <h1 id="welcome-message">Bienvenida, Usuario</h1>
+                    <p class="welcome-subtitle">Explora nuestro catálogo de productos</p>
+                </div>
+                <div class="header-actions">
+                    <button id="cart-btn" class="btn btn-cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        Carrito <span id="cart-count">0</span>
+                    </button>
+                    <button id="logout-btn" class="btn btn-outline">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Cerrar Sesión
+                    </button>
+                </div>
+            </header>
+
+            <div class="products-container">
+                <div class="products-filter">
+                    <button class="filter-btn active" data-category="todos">Todos</button>
+                    <button class="filter-btn" data-category="novedades">Novedades</button>
+                    <button class="filter-btn" data-category="vibradores">Vibradores</button>
+                    <button class="filter-btn" data-category="consoladores">Consoladores</button>
+                    <button class="filter-btn" data-category="anales">Anales</button>
+                    <button class="filter-btn" data-category="restriccion">Restricción</button>
+                    <button class="filter-btn" data-category="básicos">Básicos</button>
+                    <button class="filter-btn" data-category="joyeria">Joyería Sexy</button>
+                    <button class="filter-btn" data-category="lenceria">Lencería</button>
+                </div>
+                
+                <div class="products-grid" id="products-grid">
+                    <!-- Los productos se cargarán aquí dinámicamente -->
+                </div>
+                
+                <div id="dashboard-message" class="message" style="display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Loading Spinner -->
+    <div id="loading" class="loading hidden">
+        <div class="spinner"></div>
+        <p>Cargando...</p>
+    </div>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="product-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeProductModal()">&times;</span>
+            <div class="modal-product-content">
+                <div class="modal-product-image">
+                    <img id="modal-product-img" src="" alt="">
+                </div>
+                <div class="modal-product-info">
+                    <h2 id="modal-product-name"></h2>
+                    <div class="modal-product-price">
+                        <span id="modal-product-original" class="original-price"></span>
+                        <span id="modal-product-current" class="current-price"></span>
+                    </div>
+                    <p id="modal-product-description" class="product-description"></p>
+                    <div class="modal-product-actions">
+                        <button id="modal-add-to-cart" class="btn btn-primary">
+                            <i class="fas fa-shopping-cart"></i>
+                            Agregar al Carrito
+                        </button>
+                        <button onclick="shareProduct()" class="btn btn-outline">
+                            <i class="fas fa-share-alt"></i>
+                            Compartir
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Modal -->
+    <div id="cart-modal" class="cart-modal">
+        <div class="modal-content">
+            <span class="close-modal" onclick="closeCartModal()">&times;</span>
+            <div class="cart-header">
+                <h2><i class="fas fa-shopping-cart"></i> Mi Carrito</h2>
+            </div>
+            <div class="cart-body">
+                <div id="cart-items" class="cart-items">
+                    <!-- Los items del carrito se cargarán aquí -->
+                </div>
+                <div id="cart-empty" class="cart-empty" style="display: none;">
+                    <i class="fas fa-shopping-cart"></i>
+                    <p>Tu carrito está vacío</p>
+                    <button onclick="closeCartModal()" class="btn btn-primary">Seguir Comprando</button>
+                </div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <h3>Total: $<span id="cart-total">0</span> MXN</h3>
+                </div>
+                <div class="cart-actions">
+                    <button onclick="clearCart()" class="btn btn-outline">
+                        <i class="fas fa-trash"></i>
+                        Vaciar Carrito
+                    </button>
+                    <button onclick="processOrder()" class="btn btn-success">
+                        <i class="fas fa-credit-card"></i>
+                        Procesar Pedido
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
