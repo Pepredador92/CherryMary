@@ -468,8 +468,8 @@ function setupEventListeners() {
     // Navegación principal
     elements.buttons.login.addEventListener('click', showLoginForm);
     elements.buttons.register.addEventListener('click', showRegisterForm);
-    elements.buttons.backFromLogin.addEventListener('click', showLanding);
-    elements.buttons.backFromRegister.addEventListener('click', showLanding);
+    elements.buttons.backFromLogin.addEventListener('click', showPublicDashboard);
+    elements.buttons.backFromRegister.addEventListener('click', showPublicDashboard);
     elements.buttons.logout.addEventListener('click', () => {
         // Limpiar sesión del usuario
         clearUserSession();
