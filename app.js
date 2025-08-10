@@ -364,6 +364,7 @@ async function loginUser(telefono, password) {
         console.log('Iniciando solicitud de login a:', API_ENDPOINTS.login);
         
         const requestData = {
+            accion: "login",
             telefono: telefono,
             password: password
         };
@@ -534,6 +535,9 @@ function setupEventListeners() {
         
         // Remover confirmPassword antes de enviar
         delete userData.confirmPassword;
+        
+        // Agregar accion al userData
+        userData.accion = "signup";
         
         await registerUser(userData);
     });
@@ -824,6 +828,7 @@ async function saveCartToDatabase() {
     
     try {
         const cartData = {
+            accion: "guardar_carrito",
             usuario: AppState.user.nombre,
             telefono: AppState.user.telefono || 'N/A',
             productos: AppState.cart.map(item => ({
