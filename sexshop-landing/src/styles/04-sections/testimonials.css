@@ -1,0 +1,33 @@
+.testimonials__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.carousel {
+  margin-top: var(--space-5);
+}
+
+.carousel__controls {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.quote {
+  border-radius: var(--radius-2);
+  border: 1px solid var(--border-1);
+  background: var(--bg-2);
+  padding: var(--space-6);
+}
+
+.quote__text {
+  font-size: var(--fs-3);
+  color: var(--text-2);
+}
+
+.quote__footer {
+  margin-top: var(--space-3);
+  color: var(--text-3);
+}

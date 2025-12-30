@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Tu laboratorio Secreto. Catálogo, recomendaciones, envío discreto y entregas rápidas." />
+
+    <title>CherryMary | Experimenta en tu laboratorio secreto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" href="./styles/00-tokens.css" />
+    <link rel="stylesheet" href="./styles/01-base.css" />
+    <link rel="stylesheet" href="./styles/02-layout.css" />
+    <link rel="stylesheet" href="./styles/03-components.css" />
+
+    <link rel="stylesheet" href="./styles/04-sections/hero.css" />
+    <link rel="stylesheet" href="./styles/04-sections/benefits.css" />
+    <link rel="stylesheet" href="./styles/04-sections/products.css" />
+    <link rel="stylesheet" href="./styles/04-sections/testimonials.css" />
+    <link rel="stylesheet" href="./styles/04-sections/faq.css" />
+    <link rel="stylesheet" href="./styles/04-sections/cta.css" />
+    <link rel="stylesheet" href="./styles/04-sections/footer.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="site-header" data-navbar>
+      <div class="container navbar">
+        <a class="brand" href="#top" aria-label="Ir al inicio">
+          <span class="brand__mark" aria-hidden="true">CM</span>
+          <span class="brand__name" data-brand-name>CherryMary</span>
+        </a>
+
+        <nav class="nav" aria-label="Navegación principal">
+          <a class="nav__link" href="#beneficios">Porqué con nosotroso?</a>
+          <a class="nav__link" href="#catalogo">Catálogo</a>
+          <a class="nav__link" href="#testimonios">Hostorias</a>
+          <a class="nav__link" href="#faq">Dudas</a>
+        </nav>
+
+        <div class="nav__cta">
+          <a class="btn btn--primary" href="#cta">Pedir por WhatsApp</a>
+        </div>
+      </div>
+    </header>
+
+    <main id="contenido">
+      <section class="section hero" id="top" aria-label="Sección principal">
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="eyebrow">Tu laboratorio Secreto</p>
+            <h1 class="hero__title">Experimenta y descubre ¿quién eres?</h1>
+            <p class="hero__subtitle">
+              Productos íntimos seleccionados cuidadosamente para acompañarte en secreto, respeto y diversión.
+            </p>
+            <div class="hero__actions">
+              <a class="btn btn--primary" href="#catalogo">Explorar catálogo</a>
+              <a class="btn btn--ghost" href="#faq">Resolver dudas</a>
+            </div>
+            <ul class="hero__meta" aria-label="Características">
+              <li>Envío discreto</li>
+              <li>Atención confidencial</li>
+              <li>Entregas rápidas</li>
+            </ul>
+          </div>
+
+          <div class="hero__visual" aria-hidden="true">
+            <div class="hero__card">
+              <p class="hero__cardTitle">Recomendaciones a tu medida</p>
+              <p class="hero__cardText">Elige por estilo, intensidad y presupuesto, de chill</p>
+            </div>
+            <div class="hero__card hero__card--alt">
+              <p class="hero__cardTitle">Tu privacidad, primero</p>
+              <p class="hero__cardText">Mensajes y envíos con máxima discreción.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section benefits" id="beneficios" aria-labelledby="beneficios-title">
+        <div class="container">
+          <h2 id="beneficios-title" class="section-title">Al comprar con nosotros</h2>
+          <div class="benefits__grid">
+            <article class="feature">
+              <h3 class="feature__title">Discreción</h3>
+              <p class="feature__text">Empaques neutros, atención directa y respetuosa y nadie se entera.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">Selección con criterio</h3>
+              <p class="feature__text">Productos seleccionados cuidadosamente: materiales, seguridad y que tengan buen desempeño.</p>
+            </article>
+            <article class="feature">
+              <h3 class="feature__title">Rápido y simple</h3>
+              <p class="feature__text">Disponibilidad y pedidos rápidos para que llegue cuando lo quieres. Dependiendo de la hora tu pedido llegará el mismo día dentro de 2 a 4 horas</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section products" id="catalogo" aria-labelledby="catalogo-title">
+        <div class="container">
+          <div class="products__header">
+            <div>
+              <h2 id="catalogo-title" class="section-title">Catálogo</h2>
+              <p class="section-subtitle">Filtra por categoría o busca por nombre.</p>
+            </div>
+
+            <div class="products__controls" role="search">
+              <label class="input">
+                <span class="input__label">Buscar</span>
+                <input
+                  class="input__control"
+                  type="search"
+                  name="q"
+                  autocomplete="off"
+                  placeholder="Ej: DinoRex"
+                  data-products-search
+                />
+              </label>
+            </div>
+          </div>
+
+          <div class="chips" aria-label="Filtrar por categoría" data-category-chips></div>
+
+          <div class="sr-only" aria-live="polite" data-results-live></div>
+          <div class="products__grid" data-products-grid></div>
+        </div>
+      </section>
+
+      <section class="section testimonials" id="testimonios" aria-labelledby="testimonios-title">
+        <div class="container">
+          <div class="testimonials__header">
+            <h2 id="testimonios-title" class="section-title">Historias de nuestros clientes</h2>
+            <div class="carousel__controls" data-carousel-controls>
+              <button class="btn btn--ghost" type="button" data-carousel-prev aria-label="Anterior">
+                Anterior
+              </button>
+              <button class="btn btn--ghost" type="button" data-carousel-next aria-label="Siguiente">
+                Siguiente
+              </button>
+            </div>
+          </div>
+
+          <div class="carousel" data-carousel>
+            <div class="carousel__item" data-carousel-item>
+              <blockquote class="quote">
+                <p class="quote__text">“Me dierón confianza. Me explicaron con mucha paciencia y todo me llegó súper rápido.”</p>
+                <footer class="quote__footer">— Cliente</footer>
+              </blockquote>
+            </div>
+            <div class="carousel__item" data-carousel-item hidden>
+              <blockquote class="quote">
+                <p class="quote__text">“Le entendí bien al catálogo. Elegí rápido y estoy satisfecha con mis productos.”</p>
+                <footer class="quote__footer">— Cliente</footer>
+              </blockquote>
+            </div>
+            <div class="carousel__item" data-carousel-item hidden>
+              <blockquote class="quote">
+                <p class="quote__text">“Excelente atención por parte de los chicos y el envío fué muy rápido. Volveré a comprar.”</p>
+                <footer class="quote__footer">— Cliente</footer>
+              </blockquote>
+            </div>
+          </div>
+
+          <p class="sr-only" aria-live="polite" data-carousel-live></p>
+        </div>
+      </section>
+
+      <section class="section faq" id="faq" aria-labelledby="faq-title">
+        <div class="container">
+          <h2 id="faq-title" class="section-title">Preguntas frecuentes</h2>
+          <div class="accordion" data-faq-accordion></div>
+        </div>
+      </section>
+
+      <section class="section cta" id="cta" aria-labelledby="cta-title">
+        <div class="container">
+          <div class="cta__panel">
+            <div>
+              <h2 id="cta-title" class="cta__title">¿Lista para experimentar?</h2>
+              <p class="cta__text">
+                Escríbenos por WhatsApp. Te guiamos según lo que estés buscando, con total discreción.
+              </p>
+            </div>
+            <div>
+              <a class="btn btn--primary" href="#catalogo">Elegir producto</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" aria-label="Pie de página">
+      <div class="container footer__grid">
+        <div>
+          <p class="footer__brand"><span data-brand-name>CherryMary</span></p>
+          <p class="footer__muted">Tu laboratorio Secreto.</p>
+        </div>
+
+        <div>
+          <p class="footer__title">Redes</p>
+          <ul class="footer__links" data-social-links></ul>
+        </div>
+
+        <div>
+          <p class="footer__title">Avisos</p>
+          <ul class="footer__disclaimers" data-disclaimers></ul>
+        </div>
+      </div>
+
+      <div class="container footer__bottom">
+        <p class="footer__muted">© <span data-current-year></span> <span data-brand-name>CherryMary</span></p>
+      </div>
+    </footer>
+
+    <div class="modal" data-modal-root hidden>
+      <div class="modal__overlay" data-modal-overlay></div>
+      <div
+        class="modal__panel"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="modal-title"
+        aria-describedby="modal-desc"
+        tabindex="-1"
+        data-modal-panel
+      >
+        <div class="modal__header">
+          <h3 class="modal__title" id="modal-title" data-modal-title>Producto</h3>
+          <button class="btn btn--icon" type="button" data-modal-close aria-label="Cerrar">×</button>
+        </div>
+
+        <div class="modal__body">
+          <img class="modal__image" alt="" data-modal-image />
+
+          <div>
+            <p class="price" data-modal-price></p>
+            <p class="muted" id="modal-desc" data-modal-desc></p>
+
+            <div class="modal__actions">
+              <a class="btn btn--primary" href="#" target="_blank" rel="noopener" data-modal-whatsapp>
+                Pedir por WhatsApp
+              </a>
+              <button class="btn btn--ghost" type="button" data-modal-close>Volver</button>
+            </div>
+
+            <div class="modal__upsell" aria-label="Recomendaciones">
+              <p class="modal__upsellTitle">Recomendados para completar la experiencia</p>
+              <p class="muted" aria-live="polite" data-modal-order-summary></p>
+              <div class="modal__recoGrid" data-modal-recos></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="./scripts/main.js"></script>
+  </body>
+</html>

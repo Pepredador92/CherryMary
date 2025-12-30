@@ -1,0 +1,29 @@
+.benefits__grid {
+  margin-top: var(--space-5);
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature {
+  border-radius: var(--radius-2);
+  border: 1px solid var(--border-1);
+  background: var(--bg-2);
+  padding: var(--space-5);
+}
+
+.feature__title {
+  font-size: var(--fs-3);
+  letter-spacing: -0.01em;
+}
+
+.feature__text {
+  margin-top: var(--space-2);
+  color: var(--text-3);
+}
+
+@media (max-width: 980px) {
+  .benefits__grid {
+    grid-template-columns: 1fr;
+  }
+}
