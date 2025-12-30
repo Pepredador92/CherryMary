@@ -259,7 +259,7 @@ export const todosLosProductos = [
     imagen: 'img/basic001.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico pulido en plata con base joya en el color que ves en la foto, ideal para iniciarse en juego anal. Superficie lisa y tope ancho para seguridad. Úsalo con lubricante base agua y desinfecta con agua tibia y jabón.',
+      'Plug con base tipo joya para iniciar suave; usa lubricante base agua y completa la experiencia con lencería o un vibrador.',
   },
   {
     id: 102,
@@ -269,7 +269,7 @@ export const todosLosProductos = [
     imagen: 'img/basic002.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico plateado con gema decorativa (color visible en la imagen) y forma cónica suave. Aporta sensación firme y fresca para principiantes. Lubricante base agua recomendado; limpia con agua tibia.',
+      'Plug con forma cónica y base joya, pensado para primeras sensaciones firmes. Aplica lubricante base agua y combínalo con lencería o un vibrador.',
   },
   {
     id: 103,
@@ -279,7 +279,7 @@ export const todosLosProductos = [
     imagen: 'img/basic003.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico color plata con base tipo joya en el tono mostrado. Grosor medio para dar un paso más en la sensación de llenado. Úsalo con abundante lubricante base agua y sécalo bien.',
+      'Plug con base decorativa y grosor medio para avanzar de nivel. Usa lubricante base agua y acompáñalo con lencería o un vibrador.',
   },
   {
     id: 104,
@@ -289,7 +289,7 @@ export const todosLosProductos = [
     imagen: 'img/basic004.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico plateado con punta cónica corta y gema de color visible en la foto. Ideal para sesiones cortas o como accesorio bajo la ropa. Lava con agua tibia y jabón neutro; seca completamente.',
+      'Plug corto con punta cónica y base joya para uso discreto. Lubrica con base agua y súmale lencería o un vibrador para más estímulo.',
   },
   {
     id: 105,
@@ -299,7 +299,7 @@ export const todosLosProductos = [
     imagen: 'img/basic005.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico color plata con base ancha tipo joya (tono según la imagen) y cuerpo liso. Sensación firme para avanzar en juego anal. Usa lubricante base agua y desinfecta después.',
+      'Plug de base ancha y acabado liso para sensación firme. Usa lubricante base agua y acompáñalo con lencería o un vibrador.',
   },
   {
     id: 106,
@@ -309,7 +309,7 @@ export const todosLosProductos = [
     imagen: 'img/basic006.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico plateado con cuerpo de bulbos suaves y base con gema de color. Permite insertar y retirar de forma progresiva. Recomendado con lubricante base agua; limpiar y secar bien.',
+      'Plug con bulbos progresivos y base joya para insertarlo y retirarlo con control. Lubrica con base agua y potencia el momento con lencería o un vibrador.',
   },
   {
     id: 107,
@@ -319,7 +319,7 @@ export const todosLosProductos = [
     imagen: 'img/basic007.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico pequeño en plata con joya de color visible en la base, perfecto para uso prolongado. Sensación fría y firme que puedes templar con agua tibia antes de usar. Lubrica con base agua y limpia después.',
+      'Plug compacto con base joya para llevarlo por más tiempo. Usa lubricante base agua y combínalo con lencería o un vibrador.',
   },
   {
     id: 108,
@@ -329,7 +329,7 @@ export const todosLosProductos = [
     imagen: 'img/basic008.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico color plata con cuerpo más largo y base diamantada en el tono mostrado. Ofrece sensación fresca y elegante con toque decorativo. Usa lubricante base agua y seca con paño suave.',
+      'Plug alargado con base facetada para sensación elegante. Lubrica con base agua y súmale lencería o un vibrador.',
   },
   {
     id: 109,
@@ -339,7 +339,7 @@ export const todosLosProductos = [
     imagen: 'img/basic009.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico plateado de tamaño medio con joya de color. Proporciona peso agradable y deslizamiento suave. Lubricante base agua recomendado; lava y seca muy bien.',
+      'Plug de tamaño medio con base joya para peso agradable y juego cómodo. Usa lubricante base agua y completa con lencería o un vibrador.',
   },
   {
     id: 110,
@@ -349,7 +349,7 @@ export const todosLosProductos = [
     imagen: 'img/basic010.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico color plata con punta estilizada y base con piedra de color visible. Ideal para quienes quieren un acabado elegante y sensación firme. Usa lubricante base agua y limpia con jabón neutro.',
+      'Plug estilizado con base joya para sensación firme y elegante. Usa lubricante base agua y limpia con jabón neutro.',
   },
   {
     id: 111,
@@ -359,7 +359,7 @@ export const todosLosProductos = [
     imagen: 'img/basic011.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico plateado de talla pequeña con base joya en el color mostrado, perfecto para principiantes. Superficie lisa y tope ancho para seguridad. Lubrica con base agua y desinfecta tras usar.',
+      'Plug pequeño con base joya y tope ancho para empezar con seguridad. Lubrica con base agua y limpia tras cada uso.',
   },
   {
     id: 112,
@@ -369,7 +369,7 @@ export const todosLosProductos = [
     imagen: 'img/basic012.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico color plata con cuerpo intermedio y base de gema. Sensación firme y peso ligero para llevar debajo de la ropa. Usa lubricante base agua y seca completamente tras lavarlo.',
+      'Juguete electrónico con base segura y vibración integrada; usa lubricante base agua, limpia y seca bien después.',
   },
   {
     id: 113,
@@ -379,7 +379,7 @@ export const todosLosProductos = [
     imagen: 'img/basic013.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico plateado pequeño con base joya en tono brillante. Ideal para sesiones largas y confortables. Aplica lubricante base agua y limpia con agua tibia.',
+      'Juguete electrónico compacto con base cómoda y vibración sencilla. Aplícale lubricante base agua y limpia tras cada sesión.',
   },
   {
     id: 114,
@@ -389,7 +389,7 @@ export const todosLosProductos = [
     imagen: 'img/basic014.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico color plata con cuerpo ligeramente más ancho y piedra decorativa de color. Perfecto para subir un nivel en intensidad. Lubrica con base agua y sécalo muy bien.',
+      'Set de plugs anales de tamaños progresivos para subir intensidad con calma. Usa lubricante base agua y lava cada pieza.',
   },
   {
     id: 115,
@@ -399,7 +399,7 @@ export const todosLosProductos = [
     imagen: 'img/basic015.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico plateado compacto con joya de color, pensado para uso cómodo y discreto. Sensación fresca y peso moderado. Usa lubricante base agua y limpia con jabón neutro.',
+      'Anillo para pene enfocado en mantener la virilidad; colócalo en la base, usa lubricante base agua y retíralo si incomoda.',
   },
   {
     id: 116,
@@ -409,7 +409,7 @@ export const todosLosProductos = [
     imagen: 'img/basic016.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico pequeño en tono plata con base de gema. Opción accesible para empezar con juego anal ligero. Recomendado con lubricante base agua y sanitizado posterior.',
+      'Anillo para pene pensado para prolongar erecciones cómodas. Úsalo con lubricante base agua y retíralo tras la sesión.',
   },
   {
     id: 117,
@@ -419,7 +419,7 @@ export const todosLosProductos = [
     imagen: 'img/basic017.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico color plata con cuerpo medio y piedra decorativa. Sensación fresca y estable gracias al tope ancho. Usa lubricante base agua y seca bien tras lavarlo.',
+      'Accesorio de joyería para pezones, unitalla, ideal para adornar sobre lencería. Limpia con paño suave tras usar.',
   },
   {
     id: 118,
@@ -429,7 +429,7 @@ export const todosLosProductos = [
     imagen: 'img/basic018.JPG',
     categoria: 'básicos',
     descripcion:
-      'Plug metálico plateado de forma cónica con base joya del color mostrado. Perfecto para aumentar gradualmente el diámetro con comodidad. Lubricante base agua recomendado; limpiar y secar con cuidado.',
+      'Accesorio unitalla tipo joyería para pezones que luce sobre lencería. Limpia y seca con cuidado para conservar el brillo.',
   },
 
   {
