@@ -7,7 +7,7 @@ export const todosLosProductos = [
     imagen: 'img/pinkSquirrell.JPG',
     categoria: 'novedades',
     descripcion:
-      'Novedad pensada para explorar sin prisa, de suave a intenso según tu momento. Compacto y discreto para llevarlo contigo. Recomendado con lubricante base agua y limpieza rápida al terminar.',
+      ' Ardillita que vibra, ideal para tener a la vista un divertido secreto. '
   },
   {
     id: 1002,
@@ -17,7 +17,7 @@ export const todosLosProductos = [
     imagen: 'img/SkinSense.jpg',
     categoria: 'novedades',
     descripcion:
-      'Diseñado para quienes disfrutan la estimulación precisa y gradual. Ideal para explorar placer externo y descubrir lo que te gusta. Úsalo con lubricante base agua y límpialo antes y después.',
+      'Experiencia realista, con vibración y movimiento para disfrutar la estimulación precisa y gradual. Ideal para explorar placer externo y descubrir lo que te gusta. Úsalo con lubricante base agua y límpialo antes y después.',
   },
   {
     id: 1003,
@@ -27,7 +27,7 @@ export const todosLosProductos = [
     imagen: 'img/PurpleStick.jpg',
     categoria: 'novedades',
     descripcion:
-      'Forma alargada para experimentar a tu ritmo, con control y sin prisas. Perfecto para combinar caricias y pausas, solo o en pareja. Acompáñalo con lubricante base agua para una sensación más cómoda.',
+      'Elegante vibrador con el que puedes experimentar por ambas puertas, gracias a su diseño en ondas. Forma alargada para experimentar a tu ritmo, con control y sin prisas. Perfecto para combinar caricias y pausas, solo o en pareja. Acompáñalo con lubricante base agua para una sensación más cómoda.',
   },
   {
     id: 1004,
@@ -37,7 +37,7 @@ export const todosLosProductos = [
     imagen: 'img/VibiVarita.jpg',
     categoria: 'novedades',
     descripcion:
-      'Varita ideal para explorar con masajes y vibración enfocada donde más lo disfrutes. Úsala en sesiones cortas o largas, jugando con la intensidad. Limpieza sencilla y lista para la siguiente vez.',
+      'Un clásico, y de los más pedidos, con diferentes ritmos de vibracion, puedes estimular el punto G y penetraciones profundas. Varita ideal para explorar con masajes y vibración enfocada donde más lo disfrutes. Úsala en sesiones cortas o largas, jugando con la intensidad. Limpieza sencilla y lista para la siguiente vez.',
   },
 
   {
@@ -48,7 +48,7 @@ export const todosLosProductos = [
     imagen: 'img/DinoRex.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Vibración regulable para explorar placer externo a tu ritmo, de suave a intenso. Diseño cómodo para sostener y moverte con libertad. Recomendado con lubricante base agua y limpieza al finalizar.',
+      'Tierno dinosaurio, elegante y divertido, aligual que la ardillita es vibrados y succionador, ideal para tenerlo de compañero en tu buró a un lado de tu cama para jugar con él todas las noches. Vibración regulable para explorar placer externo a tu ritmo, de suave a intenso. Recomendado con lubricante base agua y limpieza al finalizar.',
   },
   {
     id: 10,
@@ -58,7 +58,7 @@ export const todosLosProductos = [
     imagen: 'img/labolaManda.jpg',
     categoria: 'anales',
     descripcion:
-      'Para exploración trasera gradual y segura, ideal si quieres experimentar sin prisa. Empieza de menos a más con lubricante abundante y respiración. Base pensada para un manejo cómodo e higiene fácil.',
+      'De acero inxidable, ideal para jugar en pareja y dejarte dominar. Para exploración trasera gradual y segura, ideal si quieres experimentar sin prisa. Empieza de menos a más con lubricante abundante y respiración. Base pensada para un manejo cómodo e higiene fácil.',
   },
   {
     id: 26,
@@ -68,7 +68,7 @@ export const todosLosProductos = [
     imagen: 'img/backDoor1.jpg',
     categoria: 'anales',
     descripcion:
-      'Opción para experimentar juego anal con control y calma. Úsalo con lubricante abundante y ve despacio, escuchando tu cuerpo. Ideal para explorar sensaciones nuevas con seguridad y discreción.',
+      'Dilatador, para dejar entrar por la pueta de atrás a quién tu quieras. De acero inoxidable.'
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ export const todosLosProductos = [
     imagen: 'img/backDoor2.jpg',
     categoria: 'anales',
     descripcion:
-      'Alternativa pensada para explorar de forma gradual y sin presión. Perfecto para combinar con juegos previos y pausar cuando lo necesites. Lubricante abundante recomendado; limpieza sencilla.',
+      'Dilatador creativo, solo dejate llevar y deja que te conozcan también por dentro. de acero inoxidable. Alternativa pensada para explorar de forma gradual y sin presión. Perfecto para combinar con juegos previos y pausar cuando lo necesites. Lubricante abundante recomendado; limpieza sencilla.',
   },
   {
     id: 4,
@@ -88,7 +88,7 @@ export const todosLosProductos = [
     imagen: 'img/tentaCool.jpg',
     categoria: 'consoladores',
     descripcion:
-      'Diseño para experimentar ritmo y profundidad con calma, jugando con lo que se siente bien. Ideal para explorar sola o en pareja, sin prisa. Recomendado con lubricante base agua y limpieza fácil.',
+      'El tamaño sí importa y si eres amante de los animales ésto es para tí. de silicon transparente. Diseño para experimentar ritmo y profundidad con calma, jugando con lo que se siente bien. Ideal para explorar sola o en pareja, sin prisa. Recomendado con lubricante base agua y limpieza fácil.',
   },
   {
     id: 5,
@@ -98,7 +98,7 @@ export const todosLosProductos = [
     imagen: 'img/BlackStick.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Vibración pensada para experimentar desde lo sutil hasta lo intenso. Cómodo para usar en placer externo y jugar con diferentes presiones. Úsalo con lubricante base agua y límpialo al terminar.',
+      'Vibrador con surcos,Vibración pensada para experimentar en diferentes niveles de vibración. desde lo sutil hasta lo intenso. Cómodo para usar en placer externo y jugar con diferentes presiones. Úsalo con lubricante base agua y límpialo al terminar.',
   },
   {
     id: 24,
@@ -128,7 +128,7 @@ export const todosLosProductos = [
     imagen: 'img/MagicHop.jpg',
     categoria: 'vibradores',
     descripcion:
-      'Vibración juguetona para experimentar placer externo a tu ritmo. Ideal para probar intensidades y pausas, sin presión. Úsalo con lubricante base agua y límpialo al finalizar.',
+      'Vibración con control remoto, ideal para salir a la calle con tu pareja y jugar un poco con la adrenalina. para experimentar placer externo a tu ritmo. Ideal para probar intensidades y pausas, sin presión. Úsalo con lubricante base agua y límpialo al finalizar.',
   },
   {
     id: 18,
@@ -148,7 +148,7 @@ export const todosLosProductos = [
     imagen: 'img/HuevitoPink.jpg',
     categoria: 'vibradores',
     descripcion:
-      'Compacto para experimentar estimulación externa con control y discreción. Ideal para jugar con intensidad y ritmo según tu ánimo. Recomendado con lubricante base agua y limpieza al terminar.',
+      'Vibrador compacto, con aplicación movil ideal para llevar puesto durante todo el día. Compacto para experimentar estimulación externa con control y discreción. Ideal para jugar con intensidad y ritmo según tu ánimo. Recomendado con lubricante base agua y limpieza al terminar.',
   },
   {
     id: 22,
@@ -168,7 +168,7 @@ export const todosLosProductos = [
     imagen: 'img/MoraLiza.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Vibración diseñada para explorar placer externo con precisión y calma. Ideal para experimentar distintas presiones y ritmos. Úsalo con lubricante base agua y límpialo después de cada uso.',
+      'Vibrador básico y práctivo, de plastico liso, con regulador de intensidad en la parte inferior. explorar placer externo con precisión y calma. Ideal para experimentar distintas presiones y ritmos. Úsalo con lubricante base agua y límpialo después de cada uso.',
   },
   {
     id: 23,
@@ -178,7 +178,7 @@ export const todosLosProductos = [
     imagen: 'img/VibrayPega.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Para experimentar vibración y juego de movimiento a tu ritmo. Cómodo para placer externo y para combinar con caricias. Recomendado con lubricante base agua y limpieza rápida.',
+      'Vibrador básico y práctico, de silicon con regulador de intensidad en la parte inferior. Para experimentar vibración y juego de movimiento a tu ritmo. Cómodo para placer externo y para combinar con caricias. Recomendado con lubricante base agua y limpieza rápida.',
   },
   {
     id: 20,
@@ -188,7 +188,7 @@ export const todosLosProductos = [
     imagen: 'img/CabeZone.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Vibración enfocada para experimentar sensaciones intensas o suaves según el momento. Ideal para explorar placer externo con control. Úsalo con lubricante base agua y límpialo al finalizar.',
+      'Con intensa Vibración, si buscas experimentar algo intenso y fuerte. CRecubierto de silicón delgado y texturizado. para experimentar sensaciones intensas o suaves según el momento. Ideal para explorar placer externo con control. Úsalo con lubricante base agua y límpialo al finalizar.',
   },
   {
     id: 6,
@@ -198,7 +198,7 @@ export const todosLosProductos = [
     imagen: 'img/PalitoClarito.jpg',
     categoria: 'consoladores',
     descripcion:
-      'Diseño sencillo para experimentar con ritmo y profundidad sin prisas. Ideal para explorar sensaciones y encontrar tu cadencia. Recomendado con lubricante base agua; limpieza fácil.',
+      'Consolador, transparente estilo realista, de aproximadamente 18cm de largo. Ideal experiencias más profundas. Diseño sencillo para experimentar con ritmo y profundidad sin prisas. Ideal para explorar sensaciones y encontrar tu cadencia. Recomendado con lubricante base agua; limpieza fácil.',
   },
   {
     id: 17,
@@ -228,7 +228,7 @@ export const todosLosProductos = [
     imagen: 'img/DaleDoble.jpg',
     categoria: 'consoladores',
     descripcion:
-      'Diseñado para experimentar y jugar con diferentes ángulos y ritmos. Ideal para explorar sola o en pareja, sin prisa. Recomendado con lubricante base agua y limpieza después de cada uso.',
+      'Implemento para hombres, para dar doble experiencia a la pareja. Diseñado para experimentar y jugar con diferentes ángulos y ritmos. Ideal para explorar sola o en pareja, sin prisa. Recomendado con lubricante base agua y limpieza después de cada uso.',
   },
   {
     id: 13,
@@ -238,7 +238,7 @@ export const todosLosProductos = [
     imagen: 'img/BolasDeDiez.JPG',
     categoria: 'consoladores',
     descripcion:
-      'Para experimentar con sensaciones progresivas y ritmo, sin presión. Ideal para explorar y pausar cuando lo necesites. Recomendado con lubricante base agua; limpieza sencilla.',
+      'Plug/Consolador, ideal para isar por enfrente o por atrás, hecho con silicón de la más alta calidad en forma de surcos. Para experimentar con sensaciones progresivas y ritmo, sin presión. Ideal para explorar y pausar cuando lo necesites. Recomendado con lubricante base agua; limpieza sencilla.',
   },
   {
     id: 19,
@@ -259,7 +259,7 @@ export const todosLosProductos = [
     imagen: 'img/basic001.JPG',
     categoria: 'básicos',
     descripcion:
-      'Opción simple para empezar a experimentar juego anal con suavidad. Tamaño pequeño y sensación cómoda para ir de menos a más. Lubricante abundante recomendado; limpieza antes y después.',
+      'Plug de silicón en color negro, odeal para dilatar y abrir cualquier puerta trasera. Opción simple para empezar a experimentar juego anal con suavidad. Tamaño pequeño y sensación cómoda para ir de menos a más. Lubricante abundante recomendado; limpieza antes y después.',
   },
   {
     id: 102,
