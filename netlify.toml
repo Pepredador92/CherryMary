@@ -1,7 +1,6 @@
 [build]
-  base = "sexshop-landing"
-  command = "npm run build"
-  publish = "dist"
+  command = "npm --prefix sexshop-landing run build"
+  publish = "sexshop-landing/dist"
 
 [build.environment]
   NODE_VERSION = "20"
