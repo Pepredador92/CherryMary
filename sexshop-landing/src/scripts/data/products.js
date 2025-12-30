@@ -7,7 +7,7 @@ export const todosLosProductos = [
     imagen: 'img/pinkSquirrell.JPG',
     categoria: 'novedades',
     descripcion:
-      'Novedad pensada para explorar sin prisa, de suave a intenso según tu momento. Compacto y discreto para llevarlo contigo. Recomendado con lubricante base agua y limpieza rápida al terminar.',
+      'Vibrador recargable en silicona grado médico, color rosa pastel con orejitas flexibles para estimulación externa. Motor regulable, cuerpo compacto y base en ABS para un agarre cómodo. Úsalo con lubricante base agua y limpia con jabón neutro tras cada uso.',
   },
   {
     id: 1002,
@@ -17,7 +17,7 @@ export const todosLosProductos = [
     imagen: 'img/SkinSense.jpg',
     categoria: 'novedades',
     descripcion:
-      'Diseñado para quienes disfrutan la estimulación precisa y gradual. Ideal para explorar placer externo y descubrir lo que te gusta. Úsalo con lubricante base agua y límpialo antes y después.',
+      'Vibrador de silicona sedosa en tono piel/beige, diseñado para presión puntual y masajes externos. Estructura ligera con detalles en ABS, ideal para explorar intensidad gradual. Recomendado con lubricante a base de agua y limpieza antes y después de usar.',
   },
   {
     id: 1003,
@@ -27,7 +27,7 @@ export const todosLosProductos = [
     imagen: 'img/PurpleStick.jpg',
     categoria: 'novedades',
     descripcion:
-      'Forma alargada para experimentar a tu ritmo, con control y sin prisas. Perfecto para combinar caricias y pausas, solo o en pareja. Acompáñalo con lubricante base agua para una sensación más cómoda.',
+      'Vibrador alargado en silicona morada, firme pero flexible para experimentar ritmo y profundidad controlada. Base en ABS para manejo seguro y varias intensidades para placer externo o interno. Usa lubricante base agua y desinfecta tras cada sesión.',
   },
   {
     id: 1004,
@@ -37,7 +37,7 @@ export const todosLosProductos = [
     imagen: 'img/VibiVarita.jpg',
     categoria: 'novedades',
     descripcion:
-      'Varita ideal para explorar con masajes y vibración enfocada donde más lo disfrutes. Úsala en sesiones cortas o largas, jugando con la intensidad. Limpieza sencilla y lista para la siguiente vez.',
+      'Varita vibradora en tono violeta con cabeza redondeada de silicona suave y mango rígido en ABS. Ofrece masajes potentes y enfocados sin perder comodidad, perfecta para relajar zonas externas. Acompáñala con lubricante base agua y limpieza con paño húmedo.',
   },
 
   {
@@ -48,7 +48,7 @@ export const todosLosProductos = [
     imagen: 'img/DinoRex.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Vibración regulable para explorar placer externo a tu ritmo, de suave a intenso. Diseño cómodo para sostener y moverte con libertad. Recomendado con lubricante base agua y limpieza al finalizar.',
+      'Vibrador con forma divertida en silicona verde menta y detalles blancos, pensado para placer externo con motor regulable. El cuerpo flexible y la base en ABS facilitan el agarre y la higiene. Úsalo con lubricante base agua y lava con jabón neutro al finalizar.',
   },
   {
     id: 10,
@@ -58,7 +58,7 @@ export const todosLosProductos = [
     imagen: 'img/labolaManda.jpg',
     categoria: 'anales',
     descripcion:
-      'Para exploración trasera gradual y segura, ideal si quieres experimentar sin prisa. Empieza de menos a más con lubricante abundante y respiración. Base pensada para un manejo cómodo e higiene fácil.',
+      'Cadenas de esferas anales de silicona negra con acabado mate, flexibles y con tope de seguridad. Permiten progresar de menor a mayor diámetro con lubricante base agua. Limpia con agua tibia y jabón suave tras cada uso.',
   },
   {
     id: 26,
@@ -68,7 +68,7 @@ export const todosLosProductos = [
     imagen: 'img/backDoor1.jpg',
     categoria: 'anales',
     descripcion:
-      'Opción para experimentar juego anal con control y calma. Úsalo con lubricante abundante y ve despacio, escuchando tu cuerpo. Ideal para explorar sensaciones nuevas con seguridad y discreción.',
+      'Plug anal de silicona lisa en color negro con base ancha y cuello flexible para un ajuste seguro. Ideal para quienes buscan sensación de llenado gradual. Usa lubricante a base de agua y lava con jabón neutro antes y después.',
   },
   {
     id: 3,
@@ -78,7 +78,7 @@ export const todosLosProductos = [
     imagen: 'img/backDoor2.jpg',
     categoria: 'anales',
     descripcion:
-      'Alternativa pensada para explorar de forma gradual y sin presión. Perfecto para combinar con juegos previos y pausar cuando lo necesites. Lubricante abundante recomendado; limpieza sencilla.',
+      'Plug anal con textura escalonada en tono morado, fabricado en silicona suave y con tope de seguridad. Permite juego lento y controlado acompañado de respiración. Lubrica con base agua y limpia con agua tibia.',
   },
   {
     id: 4,
@@ -88,7 +88,7 @@ export const todosLosProductos = [
     imagen: 'img/tentaCool.jpg',
     categoria: 'consoladores',
     descripcion:
-      'Diseño para experimentar ritmo y profundidad con calma, jugando con lo que se siente bien. Ideal para explorar sola o en pareja, sin prisa. Recomendado con lubricante base agua y limpieza fácil.',
+      'Consolador de silicona morada con textura inspirada en tentáculo, flexible y con ventosa para manos libres. Ideal para variaciones de profundidad y ángulo. Usa lubricante base agua y sanitiza después de cada sesión.',
   },
   {
     id: 5,
@@ -98,7 +98,7 @@ export const todosLosProductos = [
     imagen: 'img/BlackStick.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Vibración pensada para experimentar desde lo sutil hasta lo intenso. Cómodo para usar en placer externo y jugar con diferentes presiones. Úsalo con lubricante base agua y límpialo al terminar.',
+      'Vibrador clásico en color negro con acabado satinado de silicona y controles en ABS. Motor de intensidad gradual para placer externo. Combínalo con lubricante base agua y limpieza inmediata con jabón neutro.',
   },
   {
     id: 24,
@@ -108,7 +108,7 @@ export const todosLosProductos = [
     imagen: 'img/AmarreCompleto.jpg',
     categoria: 'restriccion',
     descripcion:
-      'Kit para experimentar juego de roles con enfoque cómodo y consensuado: esposas suaves, antifaz, mordaza y un flogger ligero. Ideal para principiantes que quieren explorar sin prisas. Recomendado definir límites y palabra de seguridad.',
+      'Kit de restricción en negro con esposas acolchadas, antifaz, mordaza y mini flogger en materiales sintéticos (PU y metal). Unitalla ajustable, pensado para juego consensuado y cómodo. Define límites, usa palabra de seguridad y limpia los accesorios con paño húmedo.',
   },
   {
     id: 58,
@@ -118,7 +118,7 @@ export const todosLosProductos = [
     imagen: 'img/AmarreCompleto2.JPG',
     categoria: 'restriccion',
     descripcion:
-      'Para experimentar sensaciones distintas con control: tacto frío y firme para explorar sin prisa. Ajustable para que avances de forma gradual y cómoda. Lubricante abundante recomendado; higiene cuidadosa antes y después.',
+      'Collar con correa en negro y rojo, fabricado en PU con herrajes metálicos. Unitalla ajustable para explorar control suave. Úsalo con comunicación clara, limpia con paño húmedo y seca al aire.',
   },
   {
     id: 25,
@@ -128,7 +128,7 @@ export const todosLosProductos = [
     imagen: 'img/MagicHop.jpg',
     categoria: 'vibradores',
     descripcion:
-      'Vibración juguetona para experimentar placer externo a tu ritmo. Ideal para probar intensidades y pausas, sin presión. Úsalo con lubricante base agua y límpialo al finalizar.',
+      'Vibrador de tipo conejito en tono lila, cuerpo de silicona con orejitas flexibles y base de ABS. Pensado para estimulación externa con varias velocidades. Lubricante base agua recomendado y limpieza con agua tibia.',
   },
   {
     id: 18,
@@ -138,7 +138,7 @@ export const todosLosProductos = [
     imagen: 'img/HoldKit.jpg',
     categoria: 'restriccion',
     descripcion:
-      'Accesorio para experimentar juegos de sujeción de forma cómoda y segura. Ajustable para adaptarse y explorar sin prisas. Recomendado acordar límites claros y priorizar la comunicación.',
+      'Juego de esposas y sujeción en negro con interior acolchado, fabricado en nylon y PU. Unitalla ajustable para inmovilizar de forma cómoda. Usa en pareja con acuerdos previos y limpia con paño húmedo.',
   },
   {
     id: 21,
@@ -148,7 +148,7 @@ export const todosLosProductos = [
     imagen: 'img/HuevitoPink.jpg',
     categoria: 'vibradores',
     descripcion:
-      'Compacto para experimentar estimulación externa con control y discreción. Ideal para jugar con intensidad y ritmo según tu ánimo. Recomendado con lubricante base agua y limpieza al terminar.',
+      'Huevo vibrador inalámbrico en color rosa, hecho de silicona aterciopelada con mando en ABS. Ideal para estimulación discreta y juegos a distancia. Úsalo con lubricante base agua y desinfecta después.',
   },
   {
     id: 22,
@@ -158,7 +158,7 @@ export const todosLosProductos = [
     imagen: 'img/KitDobleSujecion.JPG',
     categoria: 'restriccion',
     descripcion:
-      'Kit para experimentar sujeción ligera y juego de roles con enfoque cómodo. Ideal para parejas que quieren explorar dinámicas nuevas sin complicarse. Comunicación y palabra de seguridad recomendadas.',
+      'Kit de sujeción de muñecas y tobillos en negro, confeccionado en nylon resistente con cierres de velcro unitalla. Pensado para fijarse a cama o puertas y jugar con movilidad reducida. Prioriza comunicación, y limpia con paño húmedo tras usar.',
   },
   {
     id: 27,
@@ -168,7 +168,7 @@ export const todosLosProductos = [
     imagen: 'img/MoraLiza.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Vibración diseñada para explorar placer externo con precisión y calma. Ideal para experimentar distintas presiones y ritmos. Úsalo con lubricante base agua y límpialo después de cada uso.',
+      'Mini vibrador bala en silicona morada con punta precisa y cuerpo liso de ABS. Pensado para estímulo externo localizado con niveles de potencia variados. Usa lubricante base agua y lava con agua tibia.',
   },
   {
     id: 23,
@@ -178,7 +178,7 @@ export const todosLosProductos = [
     imagen: 'img/VibrayPega.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Para experimentar vibración y juego de movimiento a tu ritmo. Cómodo para placer externo y para combinar con caricias. Recomendado con lubricante base agua y limpieza rápida.',
+      'Vibrador con ventosa en tono rosa, de silicona suave y base estable para uso manos libres. Ideal para placer externo o inserción moderada con vibración. Recomendado lubricante base agua y limpieza con jabón neutro.',
   },
   {
     id: 20,
@@ -188,7 +188,7 @@ export const todosLosProductos = [
     imagen: 'img/CabeZone.JPG',
     categoria: 'vibradores',
     descripcion:
-      'Vibración enfocada para experimentar sensaciones intensas o suaves según el momento. Ideal para explorar placer externo con control. Úsalo con lubricante base agua y límpialo al finalizar.',
+      'Vibrador tipo bala grande en rosa con cabezal ancho de silicona y cuerpo en ABS. Perfecto para vibración profunda y controlada en zonas externas. Usa lubricante base agua y limpia con paño húmedo.',
   },
   {
     id: 6,
@@ -198,7 +198,7 @@ export const todosLosProductos = [
     imagen: 'img/PalitoClarito.jpg',
     categoria: 'consoladores',
     descripcion:
-      'Diseño sencillo para experimentar con ritmo y profundidad sin prisas. Ideal para explorar sensaciones y encontrar tu cadencia. Recomendado con lubricante base agua; limpieza fácil.',
+      'Consolador transparente en material TPE libre de ftalatos, con ligero tono cristalino y textura lisa. Flexible y de grosor medio para uso gradual. Lubrica con base agua y lava con agua tibia y jabón.',
   },
   {
     id: 17,
@@ -208,7 +208,7 @@ export const todosLosProductos = [
     imagen: 'img/PaqEncaje.JPG',
     categoria: 'anales',
     descripcion:
-      'Opción ideal para empezar a experimentar juego anal con calma. Avanza gradual, con lubricante abundante y sin forzar. Perfecto para explorar con confianza y discreción.',
+      'Plug anal corto en color negro, hecho de silicona suave con base amplia para seguridad. Ideal para principiantes que quieren sensaciones discretas. Usa lubricante base agua y limpia con jabón neutro.',
   },
   {
     id: 11,
@@ -218,7 +218,7 @@ export const todosLosProductos = [
     imagen: 'img/PinzasBDSM.JPG',
     categoria: 'restriccion',
     descripcion:
-      'Para experimentar sensaciones nuevas con control y comunicación. Ideal para juego de intensidad gradual y pausas cuando lo necesites. Recomendado definir límites claros y revisarlos durante el juego.',
+      'Pinzas para pezones en acabado metálico plateado con puntas en goma negra regulable. Unitalla con cadena ligera para añadir peso y movimiento. Úsalas con comunicación constante y desinfecta con paño con alcohol.',
   },
   {
     id: 9,
@@ -228,7 +228,7 @@ export const todosLosProductos = [
     imagen: 'img/DaleDoble.jpg',
     categoria: 'consoladores',
     descripcion:
-      'Diseñado para experimentar y jugar con diferentes ángulos y ritmos. Ideal para explorar sola o en pareja, sin prisa. Recomendado con lubricante base agua y limpieza después de cada uso.',
+      'Consolador doble terminado en tono fucsia, fabricado en silicona flexible para uso individual o en pareja. Permite doblarse y ajustar ángulos para juego dual. Aplica lubricante base agua y lava al finalizar.',
   },
   {
     id: 13,
@@ -238,7 +238,7 @@ export const todosLosProductos = [
     imagen: 'img/BolasDeDiez.JPG',
     categoria: 'consoladores',
     descripcion:
-      'Para experimentar con sensaciones progresivas y ritmo, sin presión. Ideal para explorar y pausar cuando lo necesites. Recomendado con lubricante base agua; limpieza sencilla.',
+      'Consolador de cuentas progresivas en color morado, hecho de silicona flexible con tope seguro. Aporta sensación de avance gradual y fácil retiro. Usa lubricante base agua y limpia con agua tibia.',
   },
   {
     id: 19,
@@ -248,7 +248,7 @@ export const todosLosProductos = [
     imagen: 'img/KitDobleSujecion.JPG',
     categoria: 'restriccion',
     descripcion:
-      'Set para experimentar sujeción ligera con un enfoque cómodo y seguro. Ajustable para explorar sin prisas y con confianza. Recomendado acuerdos claros, comunicación y palabra de seguridad.',
+      'Set de sujeción en negro con correas de nylon y velcro unitalla, diseñado para muñecas y tobillos. Ideal para limitar movimiento de forma segura y acolchada. Acuerda límites, usa palabra de seguridad y limpia con paño húmedo.',
   },
 
   {
@@ -259,7 +259,7 @@ export const todosLosProductos = [
     imagen: 'img/basic001.JPG',
     categoria: 'básicos',
     descripcion:
-      'Opción simple para empezar a experimentar juego anal con suavidad. Tamaño pequeño y sensación cómoda para ir de menos a más. Lubricante abundante recomendado; limpieza antes y después.',
+      'Plug metálico pulido en plata con base joya en el color que ves en la foto, ideal para iniciarse en juego anal. Superficie lisa y tope ancho para seguridad. Úsalo con lubricante base agua y desinfecta con agua tibia y jabón.',
   },
   {
     id: 102,
@@ -269,7 +269,7 @@ export const todosLosProductos = [
     imagen: 'img/basic002.JPG',
     categoria: 'básicos',
     descripcion:
-      'Ideal para experimentar por primera vez: sencillo, cómodo y fácil de usar. Pensado para avanzar con calma y sin presión. Lubricante abundante recomendado; higiene simple.',
+      'Plug metálico plateado con gema decorativa (color visible en la imagen) y forma cónica suave. Aporta sensación firme y fresca para principiantes. Lubricante base agua recomendado; limpia con agua tibia.',
   },
   {
     id: 103,
@@ -279,7 +279,7 @@ export const todosLosProductos = [
     imagen: 'img/basic003.JPG',
     categoria: 'básicos',
     descripcion:
-      'Tamaño medio para experimentar cuando ya quieres ir un paso más allá. Ideal para explorar sensaciones graduales, siempre sin prisas. Lubricante abundante recomendado; limpieza cuidadosa.',
+      'Plug metálico color plata con base tipo joya en el tono mostrado. Grosor medio para dar un paso más en la sensación de llenado. Úsalo con abundante lubricante base agua y sécalo bien.',
   },
   {
     id: 104,
@@ -289,7 +289,7 @@ export const todosLosProductos = [
     imagen: 'img/basic004.JPG',
     categoria: 'básicos',
     descripcion:
-      'Accesorio básico para experimentar con un ajuste cómodo y deslizamiento suave. Ideal para jugar con sensaciones y ritmo, sin complicarte. Recomendado con lubricante base agua y limpieza al finalizar.',
+      'Plug metálico plateado con punta cónica corta y gema de color visible en la foto. Ideal para sesiones cortas o como accesorio bajo la ropa. Lava con agua tibia y jabón neutro; seca completamente.',
   },
   {
     id: 105,
@@ -299,7 +299,7 @@ export const todosLosProductos = [
     imagen: 'img/basic005.JPG',
     categoria: 'básicos',
     descripcion:
-      'Para experimentar de forma sencilla y segura, ideal si estás empezando. Cómodo para usar con calma y pausar cuando lo necesites. Lubricante abundante recomendado; higiene fácil.',
+      'Plug metálico color plata con base ancha tipo joya (tono según la imagen) y cuerpo liso. Sensación firme para avanzar en juego anal. Usa lubricante base agua y desinfecta después.',
   },
   {
     id: 106,
@@ -309,7 +309,7 @@ export const todosLosProductos = [
     imagen: 'img/basic006.JPG',
     categoria: 'básicos',
     descripcion:
-      'Para experimentar estimulación progresiva: avanza y retrocede para regular la sensación a tu ritmo. Flexible y suave para explorar sin prisa. Lubricante abundante recomendado; limpieza cuidadosa.',
+      'Plug metálico plateado con cuerpo de bulbos suaves y base con gema de color. Permite insertar y retirar de forma progresiva. Recomendado con lubricante base agua; limpiar y secar bien.',
   },
   {
     id: 107,
@@ -319,7 +319,7 @@ export const todosLosProductos = [
     imagen: 'img/basic007.JPG',
     categoria: 'básicos',
     descripcion:
-      'Opción cómoda para experimentar y avanzar de menos a más. Ideal si ya probaste lo básico y quieres explorar un poco más. Lubricante abundante recomendado; higiene antes y después.',
+      'Plug metálico pequeño en plata con joya de color visible en la base, perfecto para uso prolongado. Sensación fría y firme que puedes templar con agua tibia antes de usar. Lubrica con base agua y limpia después.',
   },
   {
     id: 108,
@@ -329,7 +329,7 @@ export const todosLosProductos = [
     imagen: 'img/basic008.JPG',
     categoria: 'básicos',
     descripcion:
-      'Para experimentar una sensación firme y fría, con acabado liso para un deslizamiento cómodo. El detalle tipo diamante suma un toque elegante y atrevido. Lubricante abundante recomendado; limpieza cuidadosa antes y después.',
+      'Plug metálico color plata con cuerpo más largo y base diamantada en el tono mostrado. Ofrece sensación fresca y elegante con toque decorativo. Usa lubricante base agua y seca con paño suave.',
   },
   {
     id: 109,
@@ -339,7 +339,7 @@ export const todosLosProductos = [
     imagen: 'img/basic009.JPG',
     categoria: 'básicos',
     descripcion:
-      'Básico para experimentar sin complicarte, ideal para ir de menos a más. Úsalo con calma, priorizando comodidad y respiración. Lubricante base agua recomendado; limpieza antes y después.',
+      'Plug metálico plateado de tamaño medio con joya de color. Proporciona peso agradable y deslizamiento suave. Lubricante base agua recomendado; lava y seca muy bien.',
   },
   {
     id: 110,
@@ -349,7 +349,7 @@ export const todosLosProductos = [
     imagen: 'img/basic010.JPG',
     categoria: 'básicos',
     descripcion:
-      'Opción sencilla para experimentar y descubrir qué te gusta. Ideal para sesiones cortas y para probar distintas sensaciones. Lubricante base agua recomendado; higiene rápida al finalizar.',
+      'Plug metálico color plata con punta estilizada y base con piedra de color visible. Ideal para quienes quieren un acabado elegante y sensación firme. Usa lubricante base agua y limpia con jabón neutro.',
   },
   {
     id: 111,
@@ -359,7 +359,7 @@ export const todosLosProductos = [
     imagen: 'img/basic011.JPG',
     categoria: 'básicos',
     descripcion:
-      'Básico cómodo para experimentar con calma y sin presión. Perfecto para empezar y aprender tu ritmo. Lubricante abundante recomendado; limpieza antes y después de usar.',
+      'Plug metálico plateado de talla pequeña con base joya en el color mostrado, perfecto para principiantes. Superficie lisa y tope ancho para seguridad. Lubrica con base agua y desinfecta tras usar.',
   },
   {
     id: 112,
@@ -369,7 +369,7 @@ export const todosLosProductos = [
     imagen: 'img/basic012.JPG',
     categoria: 'básicos',
     descripcion:
-      'Para experimentar de forma gradual con una sensación cómoda. Ideal si quieres probar algo simple y efectivo. Recomendado con lubricante base agua y limpieza al terminar.',
+      'Plug metálico color plata con cuerpo intermedio y base de gema. Sensación firme y peso ligero para llevar debajo de la ropa. Usa lubricante base agua y seca completamente tras lavarlo.',
   },
   {
     id: 113,
@@ -379,7 +379,7 @@ export const todosLosProductos = [
     imagen: 'img/basic013.JPG',
     categoria: 'básicos',
     descripcion:
-      'Básico para experimentar sin prisas: sencillo, cómodo y fácil de usar. Ideal para descubrir sensaciones y pausar cuando lo necesites. Lubricante base agua recomendado; higiene rápida.',
+      'Plug metálico plateado pequeño con base joya en tono brillante. Ideal para sesiones largas y confortables. Aplica lubricante base agua y limpia con agua tibia.',
   },
   {
     id: 114,
@@ -389,7 +389,7 @@ export const todosLosProductos = [
     imagen: 'img/basic014.JPG',
     categoria: 'básicos',
     descripcion:
-      'Opción práctica para experimentar y explorar con confianza. Ideal para jugar con ritmo y presión a tu gusto. Recomendado con lubricante base agua; limpieza sencilla después.',
+      'Plug metálico color plata con cuerpo ligeramente más ancho y piedra decorativa de color. Perfecto para subir un nivel en intensidad. Lubrica con base agua y sécalo muy bien.',
   },
   {
     id: 115,
@@ -399,7 +399,7 @@ export const todosLosProductos = [
     imagen: 'img/basic015.JPG',
     categoria: 'básicos',
     descripcion:
-      'Básico pensado para experimentar sin complicarte. Ideal para empezar suave y subir si lo deseas. Lubricante base agua recomendado; limpieza antes y después.',
+      'Plug metálico plateado compacto con joya de color, pensado para uso cómodo y discreto. Sensación fresca y peso moderado. Usa lubricante base agua y limpia con jabón neutro.',
   },
   {
     id: 116,
@@ -409,7 +409,7 @@ export const todosLosProductos = [
     imagen: 'img/basic016.JPG',
     categoria: 'básicos',
     descripcion:
-      'Opción accesible para experimentar por primera vez, sin presión. Ideal para aprender tu ritmo y pausar cuando lo necesites. Lubricante base agua recomendado; higiene rápida.',
+      'Plug metálico pequeño en tono plata con base de gema. Opción accesible para empezar con juego anal ligero. Recomendado con lubricante base agua y sanitizado posterior.',
   },
   {
     id: 117,
@@ -419,7 +419,7 @@ export const todosLosProductos = [
     imagen: 'img/basic017.JPG',
     categoria: 'básicos',
     descripcion:
-      'Básico cómodo para experimentar sensaciones graduales. Ideal para explorar con calma y confianza. Lubricante base agua recomendado; limpieza al finalizar.',
+      'Plug metálico color plata con cuerpo medio y piedra decorativa. Sensación fresca y estable gracias al tope ancho. Usa lubricante base agua y seca bien tras lavarlo.',
   },
   {
     id: 118,
@@ -429,7 +429,7 @@ export const todosLosProductos = [
     imagen: 'img/basic018.JPG',
     categoria: 'básicos',
     descripcion:
-      'Opción simple para experimentar y descubrir qué te gusta, sin prisas. Ideal para iniciar suave y ajustar a tu comodidad. Lubricante base agua recomendado; higiene antes y después.',
+      'Plug metálico plateado de forma cónica con base joya del color mostrado. Perfecto para aumentar gradualmente el diámetro con comodidad. Lubricante base agua recomendado; limpiar y secar con cuidado.',
   },
 
   {
@@ -440,7 +440,7 @@ export const todosLosProductos = [
     imagen: 'img/j001.JPG',
     categoria: 'joyeria',
     descripcion:
-      'Accesorio para experimentar con tu estilo: un toque atrevido y elegante. Ideal para elevar un outfit o sorprender en una ocasión especial. Ligero, fácil de combinar y perfecto para regalo discreto.',
+      'Joyería corporal unitalla en acabado plateado con detalle brillante del color que ves en la foto. Liviana, hipoalergénica y ajustable para complementar lencería. Úsala para resaltar un set de encaje y limpia con paño seco.',
   },
   {
     id: 202,
@@ -450,7 +450,7 @@ export const todosLosProductos = [
     imagen: 'img/j002.JPG',
     categoria: 'joyeria',
     descripcion:
-      'Detalle sensual para experimentar con un look más seguro y provocador. Perfecto para combinar con lencería o un outfit minimalista. Ideal para regalar (o autoregalar) con discreción.',
+      'Cadena sensual unitalla en tono plateado con dijes en el color mostrado, pensada para el torso o cadera. Ajustable y ligera para combinar con lencería negra o roja. Limpia con paño suave tras usar.',
   },
   {
     id: 203,
@@ -460,7 +460,7 @@ export const todosLosProductos = [
     imagen: 'img/j003.JPG',
     categoria: 'joyeria',
     descripcion:
-      'Accesorio para experimentar y jugar con un toque glam. Fácil de combinar, eleva cualquier look en segundos. Ideal para quien quiere un detalle atrevido sin ser exagerado.',
+      'Pieza de joyería corporal unitalla en acabado plateado con cristales claros. Ideal para añadir brillo a un conjunto de lencería de encaje. Ajusta la cadena a tu medida y guarda en bolsa suave.',
   },
   {
     id: 204,
@@ -470,7 +470,7 @@ export const todosLosProductos = [
     imagen: 'img/j004.JPG',
     categoria: 'joyeria',
     descripcion:
-      'Para experimentar con un estilo más sensual y elegante, sin complicarte. Ideal para complementar lencería o un outfit nocturno. Ligero, cómodo y fácil de usar.',
+      'Accesorio unitalla plateado con detalle central en color ahumado, pensado para usar sobre lencería o escote. Ligero y cómodo, resalta mejor con conjuntos oscuros. Limpia con paño seco para mantener el brillo.',
   },
   {
     id: 205,
@@ -480,7 +480,7 @@ export const todosLosProductos = [
     imagen: 'img/j005.JPG',
     categoria: 'joyeria',
     descripcion:
-      'Accesorio pensado para experimentar con seguridad y actitud. Un detalle que suma sensualidad sin perder elegancia. Ideal para regalar y para looks discretos pero atrevidos.',
+      'Joyería corporal unitalla en tono dorado con cristales claros, ajustable en cuello y cintura. Combina perfecto con lencería negra o roja para un look glam. Guarda en seco y limpia con paño de microfibra.',
   },
   {
     id: 206,
@@ -490,7 +490,7 @@ export const todosLosProductos = [
     imagen: 'img/j006.JPG',
     categoria: 'joyeria',
     descripcion:
-      'Detalle sensual para experimentar con un toque sutil y moderno. Fácil de combinar con tu estilo diario o una ocasión especial. Ligero, cómodo y listo para regalar.',
+      'Cadena minimalista unitalla en acabado plateado con dije en color azul cielo. Diseñada para usarse sobre lencería o escote profundo, aportando brillo sutil. Manténla seca y límpiala después de cada uso.',
   },
 
   {
@@ -501,7 +501,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc001.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Lencería para experimentar con tu estilo y sentirte segura en tu piel. Diseño favorecedor para jugar con capas y miradas. Ideal para una noche especial (o para ti, cualquier día).',
+      'Set de lencería unitalla en encaje negro con transparencias, cómodo y elástico. Resalta curvas y combina perfecto con joyería plateada para un look completo. Recomendado lavado a mano y secado al aire.',
   },
   {
     id: 302,
@@ -511,7 +511,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc002.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Opción ligera para experimentar un look sensual sin complicarte. Cómoda para moverte y combinar con tu ropa favorita. Ideal para regalar o autoregalar.',
+      'Body de lencería unitalla en color rojo vino con encaje ligero y tirantes ajustables. Ideal para empezar en lencería sensual y complementarlo con cadenas plateadas. Lavar a mano y no usar secadora.',
   },
   {
     id: 303,
@@ -521,7 +521,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc003.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Lencería para experimentar con actitud: elegante, moderna y favorecedora. Ideal para una noche especial y para sentirte segura desde el primer momento. Perfecta para combinar con accesorios.',
+      'Conjunto unitalla negro con tiras cruzadas y encaje, favorecedor y ajustable. Luce espectacular con joyería dorada o plateada para destacar el escote. Lavar delicado y secar a la sombra.',
   },
   {
     id: 304,
@@ -531,7 +531,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc004.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Set ideal para experimentar un look sensual y sencillo. Cómodo para usar sin prisa y sin ajustes complicados. Perfecto para regalar o para darte un gusto discreto.',
+      'Conjunto de encaje unitalla en tono blanco marfil con liguero sencillo. Fresco y ligero, ideal para combinar con joyería fina plateada. Lávalo a mano y evita el cloro.',
   },
   {
     id: 305,
@@ -541,7 +541,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc005.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Lencería para experimentar con un look elegante y atrevido. Diseñada para realzar y acompañarte con comodidad. Ideal para una noche especial o para elevar tu rutina.',
+      'Bralette y panty unitalla en encaje rojo carmesí con tiras decorativas. Destaca mejor con joyería dorada para un look intenso. Cuida la prenda con lavado suave y secado natural.',
   },
   {
     id: 306,
@@ -551,7 +551,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc006.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Para experimentar con un look sensual y moderno, sin perder comodidad. Ideal para combinar con accesorios y jugar con capas. Perfecta para una ocasión especial.',
+      'Set unitalla en encaje negro con transparencias y tiras elásticas. Ajustable y cómodo para diferentes cuerpos, luce increíble con cadenas plateadas. Lava a mano y seca al aire.',
   },
   {
     id: 307,
@@ -561,7 +561,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc007.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Lencería pensada para experimentar con confianza y estilo. Favorecedora, cómoda y fácil de combinar. Ideal para sentirte bien y jugar con tu propio ritmo.',
+      'Body unitalla en encaje azul profundo con tirantes ajustables. Realza la figura y combina bien con joyería plateada para un toque brillante. Lavar delicado y evitar retorcer.',
   },
   {
     id: 308,
@@ -571,7 +571,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc008.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Set para experimentar un look sensual y elegante, sin excesos. Cómodo para moverte y disfrutar sin prisa. Perfecto para regalar o para una noche especial.',
+      'Conjunto unitalla en encaje negro con liguero integrado y transparencias. Estiliza la cintura y se potencia con joyería dorada. Lava con detergente suave y seca a la sombra.',
   },
   {
     id: 309,
@@ -581,7 +581,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc009.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Opción ligera para experimentar con un toque sensual y discreto. Ideal para empezar y combinar con tu estilo. Cómoda, fácil de usar y perfecta para regalo.',
+      'Set unitalla en encaje rosa pastel con tirantes ligeros. Su tono dulce combina perfecto con joyería plateada minimalista. Lavar a mano y dejar secar extendido.',
   },
   {
     id: 310,
@@ -591,7 +591,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc010.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Lencería para experimentar con un look moderno y seguro. Diseñada para realzar y sentirse cómoda al mismo tiempo. Ideal para una noche especial o para ti.',
+      'Body unitalla negro con recortes y transparencias geométricas. Ajustable y favorecedor, ideal para resaltar con joyería plateada. Lava en frío y seca al aire.',
   },
   {
     id: 311,
@@ -601,7 +601,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc011.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Set pensado para experimentar con estilo y confianza. Ideal para jugar con capas, luces y detalles. Cómodo para disfrutar sin prisas y sin ajustes complicados.',
+      'Conjunto unitalla en encaje verde esmeralda con liguero. El color vibrante luce aún mejor con joyería dorada delicada. Lavar a mano y no planchar.',
   },
   {
     id: 312,
@@ -611,7 +611,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc012.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Lencería para experimentar un look elegante, sensual y directo. Favorecedora para diferentes cuerpos y fácil de combinar. Ideal para una ocasión especial y para sentirte increíble.',
+      'Set unitalla rojo intenso con encaje floral y tirantes ajustables. Perfecto para noches especiales y para combinar con cadenas doradas. Lava con jabón suave y seca a la sombra.',
   },
   {
     id: 313,
@@ -621,7 +621,7 @@ export const todosLosProductos = [
     imagen: 'img/lnc013.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Opción ideal para experimentar con un look sensual y cómodo. Fácil de usar y de combinar, perfecta para empezar. Ideal para regalar o autoregalar sin complicarte.',
+      'Conjunto unitalla en encaje negro con cortes laterales. Cómodo y elástico, realza con joyería plateada o chokers. Lavar delicado y dejar secar al aire.',
   },
   {
     id: 314,
@@ -631,6 +631,6 @@ export const todosLosProductos = [
     imagen: 'img/lnc014.JPG',
     categoria: 'lenceria',
     descripcion:
-      'Lencería para experimentar con un look sofisticado y atrevido. Diseñada para realzar y acompañarte con comodidad. Ideal para una noche especial o para elevar tu rutina.',
+      'Body unitalla en encaje burdeos con transparencias y detalles de tiras. Sensual y sofisticado, combina excelente con joyería dorada. Lavar a mano y no exponer al sol directo.',
   },
 ];
