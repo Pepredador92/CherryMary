@@ -198,6 +198,7 @@
   display: grid;
   place-items: center;
   padding: var(--space-5);
+  overflow-y: auto;
 }
 
 .modal__overlay {
@@ -209,6 +210,9 @@
 .modal__panel {
   position: relative;
   width: min(920px, 100%);
+  max-height: calc(100vh - var(--space-6));
+  display: flex;
+  flex-direction: column;
   border-radius: var(--radius-2);
   background: var(--bg-2);
   border: 1px solid var(--border-1);
@@ -234,6 +238,9 @@
   display: grid;
   gap: var(--space-4);
   grid-template-columns: 1fr 1fr;
+  overflow-y: auto;
+  flex: 1;
+  min-height: 0;
 }
 
 .modal__image {
@@ -322,12 +329,26 @@
 }
 
 @media (max-width: 860px) {
+  .modal {
+    align-items: start;
+    padding: var(--space-4);
+  }
+
+  .modal__panel {
+    max-height: calc(100vh - var(--space-4));
+  }
+
+  .modal__header {
+    padding: var(--space-3);
+  }
+
   .input__control {
     width: 100%;
   }
 
   .modal__body {
     grid-template-columns: 1fr;
+    padding: var(--space-3);
   }
 }
 
